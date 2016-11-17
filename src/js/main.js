@@ -1,3 +1,5 @@
-/**
- * Created by admin on 2016-11-16.
- */
+$(document).ready(function() {
+    /* 주석 */
+    var msg = 'msggggg';
+    alert(msg);
+});

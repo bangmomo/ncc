@@ -7,6 +7,12 @@ import cleanCSS from 'gulp-clean-css';
 import htmlmin from 'gulp-htmlmin';
 import imagemin from 'gulp-imagemin';
 import del from 'del';
+import babel from 'gulp-babel';
+import Cache from 'gulp-file-cache';
+import nodemon from 'gulp-nodemon';
+import browserSync from 'browser-sync';
+
+let cache = new Cache();
 
 const DIR = {
     SRC: 'src',
@@ -20,31 +26,65 @@ const SRC = {
     HTML: DIR.SRC + '/html/**/*.html',
     IMAGES: DIR.SRC + '/images/**/*',
     FONTS: DIR.SRC + '/resources/fonts/*',
-    LIBRARY: DIR.SRC + '/resources/lib/**/*'
+    LIBRARY: DIR.SRC + '/resources/lib/**/*',
+    SERVER: 'server/**/*.js'
 };
 
 const DEST = {
-     JS: DIR.DEST + '/js',
-     CSS: DIR.DEST + '/css',
-     HTML: DIR.DEST + '/html',
-     IMAGES: DIR.DEST + '/images',
-     FONTS: DIR.DEST + '/fonts',
-     LIBRARY: DIR.DEST + '/lib'
+    JS: DIR.DEST + '/js',
+    CSS: DIR.DEST + '/css',
+    HTML: DIR.DEST + '/html',
+    IMAGES: DIR.DEST + '/images',
+    FONTS: DIR.DEST + '/fonts',
+    LIBRARY: DIR.DEST + '/lib',
+    SERVER: 'app'
  };
 
 const option = {
     autoprefixer: ['last 2 versions', 'IE 9', 'iOS >= 6']
 };
 
+gulp.task('babel', () => {
+    return gulp.src(SRC.SERVER)
+        .pipe(cache.filter())
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(cache.cache())
+        .pipe(gulp.dest(DEST.SERVER));
+});
+
+gulp.task('start', ['babel'], () => {
+    return nodemon({
+        script: DEST.SERVER + '/main.js',
+        watch: DEST.SERVER
+    });
+});
+
+gulp.task('browser-sync', () => {
+    browserSync.init(null, {
+        proxy: "http://localhost:3000/html",
+        files: ["dist/**/*.*"],
+        port: 7000
+    })
+});
+
 gulp.task('js', () => {
     return gulp.src(SRC.JS)
-        .pipe(uglify())
+        .pipe(uglify({
+            mangle: false,
+            compress: false,
+            output: { beautify: true },
+            preserveComments : 'all'
+        }))
         .pipe(gulp.dest(DEST.JS));
 });
 
 gulp.task('css', () => {
     return gulp.src(SRC.CSS)
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
         .pipe(gulp.dest(DEST.CSS));
 });
 
@@ -75,7 +115,8 @@ gulp.task('watch', () => {
         js: gulp.watch(SRC.JS, ['js']),
         css: gulp.watch(SRC.CSS, ['css']),
         html: gulp.watch(SRC.HTML, ['html']),
-        images: gulp.watch(SRC.IMAGES, ['images'])
+        images: gulp.watch(SRC.IMAGES, ['images']),
+        babel: gulp.watch(SRC.SERVER, ['babel'])
     };
 
     let notify = (event) => {
@@ -87,6 +128,6 @@ gulp.task('watch', () => {
     }
 });
 
-gulp.task('default', ['clean', 'js', 'css', 'html', 'images', 'watch'], () => {
+gulp.task('default', ['clean', 'js', 'css', 'html', 'images', 'watch', 'start', 'browser-sync'], () => {
     gutil.log('Gulp is running');
 });
