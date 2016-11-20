@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+
+    + .radio {
+        margin-left: 40px;
+    }
+
+    input {
+        @include hidden;
+
+        &:checked {
+            + label {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    label {
+        display: block;
+        color: #696969;
+        font-size: 15px;
+        cursor: pointer;
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width:  18px;
+            height: 18px;
+            border: 1px solid #a6a6a6;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        &::after {
+            content: " ";
+            display: none;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+            width:  8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $point-color1;
+        }
+    }
+}
+
+

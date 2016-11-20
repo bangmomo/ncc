@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.detail-area {
+    border-top: 2px solid $point-color1;
+    border-bottom: 2px solid #575757;
+
+    .title {
+        padding: 13px 35px;
+        border-bottom: 1px solid #bdd1e9;
+        background-color: #f2f6fb;
+        color: #000;
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .util {
+        padding: 10px 35px;
+        border-bottom: 1px solid #d3d3d3;
+
+        > span {
+            display: inline-block;
+            vertical-align: middle;
+
+            + span {
+                position: relative;
+                margin-left: 10px;
+                padding-left: 15px;
+
+                &::before {
+                    @include alignY;
+                    content: " ";
+                    display: block;
+                    left: 0;
+                    width: 1px;
+                    height: 10px;
+                    background-color: #c4c4c4;
+                }
+            }
+        }
+
+        .date {
+            font-family: $font-lato;
+            color: #000;
+            font-size: 12px;
+        }
+    }
+
+    .article {
+        min-height: 600px;
+        padding: 30px 35px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    .near {
+        > div {
+            display: table;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 1px solid #d3d3d3;
+        }
+
+        .key {
+            display: table-cell;
+            width: 120px;
+            color: #333;
+            font-weight:600;
+            font-size: 16px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .value {
+            display: table-cell;
+            position: relative;
+            padding: 0 30px;
+            color: #666;
+            font-weight: 300;
+            font-size: 16px;
+            vertical-align: middle;
+
+            &::before {
+                @include alignY;
+                content: " ";
+                display: block;
+                left: 0;
+                height: 14px;
+                border-left: 1px solid #b1b1b1;
+            }
+        }
+
+        .prev {
+            .key {
+                background: url(../../images/common/icon-prev-cont.png) no-repeat 85% 50%;
+            }
+        }
+
+        .next {
+            .key {
+                background: url(../../images/common/icon-next-cont.png) no-repeat 85% 50%;
+            }
+        }
+    }
+}
+

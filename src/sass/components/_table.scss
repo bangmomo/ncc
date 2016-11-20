@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+caption {
+    span {
+        overflow: hidden;
+        position: fixed;
+        top: -9999px;
+        left: -9999px;
+        width: 10px;
+        height: 25px;
+    }
+}
+
+.table {
+    border-top: 2px solid $point-color1;
+    border-bottom: 2px solid #575757;
+
+    table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+        width: 100%;
+
+        th,td {
+            padding: 13px 15px;
+            color: #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead {
+            tr {
+                &:last-child {
+                    th {
+                        border-bottom: 1px solid #bdd1e9;
+                    }
+                }
+            }
+
+            th {
+                background-color: #f2f6fb;
+                color: #000;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+
+        tbody {
+            td {
+                border-top: 1px solid #d3d3d3;
+                font-size: 14px;
+
+                &.subject {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #515151;
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &.detail-type {
+        border-top: 1px solid #3a3a3a;
+        border-bottom: 1px solid #3a3a3a;
+
+        table {
+            th, td {
+                + th, + td {
+                    border-left: 1px solid #d0d0d0;
+                }
+            }
+
+            thead {
+                tr {
+                    &:last-child {
+                        th {
+                            border-bottom: 1px solid #d0d0d0;
+                        }
+                    }
+                }
+
+                th {
+                    background-color: #f8f8f8;
+                }
+            }
+
+            tbody {
+                td {
+                    color: #666;
+                    font-weight: 600;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -6,8 +6,10 @@ import uglify from 'gulp-uglify';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import sourcemaps from 'gulp-sourcemaps';
+import urlAdjuster from 'gulp-css-url-adjuster';
 import htmlmin from 'gulp-htmlmin';
 import imagemin from 'gulp-imagemin';
+import htmlhint from 'gulp-htmlmin';
 import del from 'del';
 import babel from 'gulp-babel';
 import Cache from 'gulp-file-cache';
@@ -23,12 +25,11 @@ const DIR = {
 
 const SRC = {
     JS: DIR.SRC + '/js/**/*.js',
-    CSS: DIR.SRC + '/css/*.css',
+    CSS: DIR.SRC + '/css',
     SASS: DIR.SRC + '/sass/**/*.scss',
     HTML: DIR.SRC + '/html/**/*.html',
     IMAGES: DIR.SRC + '/images/**/*',
-    FONTS: DIR.SRC + '/resources/fonts/*',
-    LIBRARY: DIR.SRC + '/resources/lib/**/*',
+    FONTS: DIR.SRC + '/fonts/*',
     SERVER: 'server/**/*.js'
 };
 
@@ -38,7 +39,6 @@ const DEST = {
     HTML: DIR.DEST + '/html',
     IMAGES: DIR.DEST + '/images',
     FONTS: DIR.DEST + '/fonts',
-    LIBRARY: DIR.DEST + '/lib',
     SERVER: 'app'
  };
 
@@ -78,7 +78,11 @@ gulp.task('sass', () => {
             browsers: ['last 2 versions', 'IE 9', 'iOS >= 6'],
             cascade: false
         }))
+        .pipe(urlAdjuster({
+            replace:  ['../..','..'],
+        }))
         .pipe(sourcemaps.write())
+        .pipe(gulp.dest(SRC.CSS))
         .pipe(gulp.dest(DEST.CSS));
 });
 
@@ -109,10 +113,14 @@ gulp.task('clean', () => {
     return del.sync([DIR.DEST]);
 });
 
-gulp.task('images', () => {
-    return gulp.src(SRC.IMAGES)
-        .pipe(imagemin())
-        .pipe(gulp.dest(DEST.IMAGES));
+gulp.task('copy', () => {
+    return gulp.src(SRC.FONTS)
+        .pipe(gulp.dest(DEST.FONTS));
+});
+
+gulp.task('htmlhint', function() {
+    gulp.src(DEST.HTML + '/**/*.html')
+        .pipe(htmlhint('.htmlhintrc'));
 });
 
 gulp.task('watch', () => {
@@ -133,6 +141,6 @@ gulp.task('watch', () => {
     }
 });
 
-gulp.task('default', ['clean', 'sass', 'js', 'html', 'images', 'watch', 'start', 'browser-sync'], () => {
+gulp.task('default', ['clean', 'sass', 'js', 'html', 'images', 'copy', 'htmlhint', 'watch', 'start', 'browser-sync'], () => {
     gutil.log('Gulp is running');
 });

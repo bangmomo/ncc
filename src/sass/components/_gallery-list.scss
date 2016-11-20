@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.gallery-list {
+    border-top: 2px solid $point-color1;
+    border-bottom: 2px solid #575757;
+
+    ul {
+        @include clearfix;
+        margin: -13px -6;
+
+        > li {
+            float: left;
+            width: 33.33333333%;
+            padding: 13px 6px;
+
+            a {
+                display: block;
+            }
+
+            .thumb {
+                position: relative;
+                overflow: hidden;
+                height: 214px;
+
+                img {
+                    @include alignX;
+                    height: 100%;
+                }
+            }
+
+            .title {
+                @include ellipsis;
+                margin-top: 10px;
+                color: #000;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            .date {
+                margin-top: 3px;
+                font-family: $font-lato;
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+}
+
