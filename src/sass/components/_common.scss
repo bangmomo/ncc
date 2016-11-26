@@ -1,6 +1,12 @@
 .clearfix {
     @include clearfix;
 }
+.expanded {
+    width: 100%;
+}
+.point-color-red {
+    color: #ff1c0a;
+}
 .point-color1 {
     color: $point-color1;
 }

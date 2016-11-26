@@ -63,6 +63,18 @@ caption {
         }
     }
 
+    &.history-type {
+        table {
+            tbody {
+                .next-century {
+                    td {
+                        border-top: 1px solid #333;
+                    }
+                }
+            }
+        }
+    }
+
     &.detail-type {
         border-top: 1px solid #3a3a3a;
         border-bottom: 1px solid #3a3a3a;
@@ -93,6 +105,10 @@ caption {
                     color: #666;
                     font-weight: 600;
                     text-align: left;
+
+                    &[scope="row"] {
+                        text-align: center;
+                    }
                 }
             }
         }

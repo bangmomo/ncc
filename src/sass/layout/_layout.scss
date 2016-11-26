@@ -23,8 +23,10 @@
                 }
 
                 &.open {
-                    .menu-open {
-                        background: url(../../images/common/lnb-depth-close.png) no-repeat 50% 50%;
+                    .btn-open {
+                        &::after {
+                            background: url(../../images/common/lnb-depth-close.png) no-repeat 50% 50%;
+                        }
                     }
 
                     > .menu {
@@ -52,20 +54,23 @@
                     }
                 }
 
-                .menu-open {
-                    position: absolute;
-                    top: 18px;
-                    right: 8px;
-                    width: 23px;
-                    height: 23px;
-                    background: url(../../images/common/lnb-depth-open.png) no-repeat 50% 50%;
-                    text-indent: -9999px;
+                .btn-open {
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        top: 18px;
+                        right: 8px;
+                        width: 23px;
+                        height: 23px;
+                        background: url(../../images/common/lnb-depth-open.png) no-repeat 50% 50%;
+                        text-indent: -9999px;
+                    }
                 }
 
                 > .menu {
-                    padding: 18px 26px 18px 15px;
-
                     > a {
+                        display: block;
+                        padding: 18px 26px 18px 15px;
                         color: #515151;
                         font-size: 17px;
 

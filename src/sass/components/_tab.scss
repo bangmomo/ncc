@@ -40,6 +40,11 @@
             > a {
                 display: block;
                 padding: 14px 0;
+                
+                &:hover {
+                    color: $point-color1;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -53,16 +58,17 @@
                 display: block;
                 float: left;
                 width: 14.28571428%;
-                border-top: 1px solid #4f77a8;
-                border-right: 1px solid #4f77a8;
-                background-color: #4f77a8;
+                border: 1px solid #4f77a8;
+                background-color: #fff;
+
 
                 &.active {
-                    border: 1px solid #4f77a8;
-                    background-color: #fff;
+                    border-top: 1px solid #4f77a8;
+                    border-right: 1px solid #4f77a8;
+                    background-color: #4f77a8;
 
                     a {
-                        color: #4f77a8;
+                        color: #fff;
                     }
 
                     + li {
@@ -73,7 +79,11 @@
 
                 > a {
                     padding: 8px 0;
-                    color: #fff;
+                    color: #4f77a8;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

@@ -27,7 +27,7 @@ $('.header-util .btn-srch').on('click', function(e) {
 });
 
 /* LNB 하위뎁스 열기 버튼 클릭시 */
-$(".lnb .menu-open").on('click', function(e) {
+$(".lnb .btn-open").on('click', function(e) {
     $(this).closest('li').toggleClass('open');
 
     e.preventDefault();
