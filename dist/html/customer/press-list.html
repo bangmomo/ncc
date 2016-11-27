@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="contents">
+        <div class="cont-body">
+            <div class="tab">
+                <ul class="nav">
+                    <li class="active"><a href="#">보도자료</a></li>
+                    <li><a href="#">해명자료</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <span>검색</span>
+                <div class="select">
+                    <label for="sel2">검색조건</label>
+                    <select id="sel2">
+                        <option value="">제목</option>
+                        <option value="">내용</option>
+                        <option value="">제목 + 내용</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="txt2">입력</label>
+                    <input type="text" id="txt2">
+                </div>
+                <div class="btn sm dark">검색</div>
+            </div>
+            <div class="table">
+                <table>
+                    <caption><span>보도자료의 목록을 나타낸  표</span></caption>
+                    <colgroup class="table-col">
+                        <col style="width: 10%">
+                        <col style="width: 60%">
+                        <col style="width: 15%">
+                        <col style="width: 15%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">파일</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>612</td>
+                        <td class="subject"><a href="#">산업단지 경쟁력강화를 위해 전국 산학연협의체 한자리에 모여</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>611</td>
+                        <td class="subject"><a href="#">상상의 나래, 창업의 세계 담소(談笑)에서 펼치다!</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>610</td>
+                        <td class="subject"><a href="#">산단공, 어려운 이웃 위한 사랑의 집수리 봉사</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>609</td>
+                        <td class="subject"><a href="#">한국경제의 희망 ! 산업단지에서 창조경제를!</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr><tr>
+                        <td>608</td>
+                        <td class="subject"><a href="#">G밸리 애니메이션‧게임‘캐릭터 다 모여라’</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>607</td>
+                        <td class="subject"><a href="#">특성화고 여학생 취업난, 담소(談笑)에서 해법을 찾다!</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>606</td>
+                        <td class="subject"><a href="#">산단공 대경본부, 수출유망기업 중국진출 지원 본격화</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>605</td>
+                        <td class="subject"><a href="#">산단공, 정부3.0정책에 발맞춰 공장등록 정보공개 확대</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr><tr>
+                        <td>604</td>
+                        <td class="subject"><a href="#">채용박람회 통해 중견·강소기업 인력난 해소 및 고용창출</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+                    <tr>
+                        <td>603</td>
+                        <td class="subject"><a href="#">산단공, 에너지 재활용 통한 생태산업단지 구축</a></td>
+                        <td>2016.11.16</td>
+                        <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="first">첫페이지</a>
+                <a href="#" class="prev">이전페이지</a>
+                <div class="num">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                </div>
+                <a href="#" class="next">다음페이지</a>
+                <a href="#" class="last">마지막페이지</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/component.js"></script>
+</body>
+</html>

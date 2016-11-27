@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.desc-point {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
 .desc-list {
     &.sm {
         > li {
@@ -32,6 +37,25 @@
 
         .sub-title {
             margin-bottom: 0;
+        }
+
+        > ul {
+            margin-top: 5px;
+
+            > li {
+                margin-top: 5px;
+                padding-left: 10px;
+                text-indent: -10px;
+
+                > ul {
+                    margin-top: 5px;
+                    padding-left: 10px;
+
+                    > li {
+                        margin-top: 5px;
+                    }
+                }
+            }
         }
     }
 }

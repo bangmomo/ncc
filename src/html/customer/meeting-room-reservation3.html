@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="contents">
+        <div class="cont-body">
+            <div class="tab equal">
+                <ul class="nav">
+                    <li><a href="#">회의실 안내</a></li>
+                    <li class="active"><a href="#">예약하기</a></li>
+                    <li><a href="#">결과조회</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <div class="img-wrap">
+                    <img src="../../images/customer/reservation3.png" alt="">
+                </div>
+            </div>
+            <div class="section">
+                <h4 class="sub-title">3단계 예약가능 회의실 선택</h4>
+                <ul class="desc-list">
+                    <li>
+                        수집하는 개인정보의 항목
+                        <ul>
+                            <li>- 공단은 원활한 고객관리를 위해 찾아가는 키콕스벤처센터 회의실신청 이용시 아래와 같은 개인정보를 수집하고 있습니다. 보유 기간이 지난 이후에는 귀하의 개인정보는 파기됩니다.</li>
+                            <li>- 필수항목 : 부서명, 신청자명, E-mail, 전화번호(H.P)</li>
+                            <li>- 개인정보의 보유 및 이용기간: 3년</li>
+                            <li>- 보유근거: 서비스 개선을 위한 통계 및 관리</li>
+                        </ul>
+                    </li>
+                    <li>
+                        개인정보의 수집 및 이용 목적
+                        <ul>
+                            <li>- 서비스 제공에 관한 업무 이행 : 응답 결과 용도</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="border-div">
+                    <div class="guide" data-bottom="sm">
+                        <b class="point-color1">동의를 거부 할 권리가 있으며, 동의거부 시 글쓰기가 불가하오니 양지하시기 바랍니다. 개인정보보호법 제15조에 따라 위 각호사항을 고지받고 개인정보 처리에 동의 합니다.</b>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="r4" name="rg-2">
+                        <label for="r4">동의합니다.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="r5" name="rg-2">
+                        <label for="r5">동의하지 않습니다.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4 class="sub-title">3단계 예약정보작성</h4>
+                <div class="guide" data-bottom="xs"><b class="point-color1">2016년 11월 2일 (수) 06:00 ~ 08:00 대회의실(120석)</b> 을 선택하셨습니다.</div>
+                <div class="table detail-type">
+                    <table>
+                        <caption><span>방만경영 정상화 이행실적을 분야, 가이드라인 등, 운영현황, 개선내용으로 나타낸 표</span></caption>
+                        <colgroup class="table-col">
+                            <col style="width: 20%">
+                            <col style="width: 80%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="text-left">구분</th>
+                            <td>KICOX 센터 업체</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">단체 (회사) 명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-1">단체 (회사) 명</label>
+                                    <input type="text" id="txt2-1">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">사업자등록번호</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-2">사업자등록번호</label>
+                                    <input type="text" id="txt2-2">
+                                </div>
+                                <span data-left="xs">(숫자만 입력해주세요)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">대표자명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-3">대표자명</label>
+                                    <input type="text" id="txt2-3">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">업태명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-4">업태명</label>
+                                    <input type="text" id="txt2-4">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">업종명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-5">업종명</label>
+                                    <input type="text" id="txt2-5">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">주소</th>
+                            <td>
+                                <div class="address">
+                                    <div class="zip-code">
+                                        <div class="input sm">
+                                            <label for="zipcode1">우편번호</label>
+                                            <input type="text" id="zipcode1">
+                                        </div>
+                                        <span class="dash">-</span>
+                                        <div class="input sm">
+                                            <label for="zipcode2">우편번호</label>
+                                            <input type="text" id="zipcode2">
+                                        </div>
+                                        <a href="#" class="btn sm white">우편번호검색</a>
+                                    </div>
+                                    <div class="input expanded">
+                                        <label for="addr1">상세주소</label>
+                                        <input type="text" id="addr1">
+                                    </div>
+                                    <div class="input expanded">
+                                        <label for="addr2">상세주소</label>
+                                        <input type="text" id="addr2">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">부서명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-6">부서명</label>
+                                    <input type="text" id="txt2-6">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">신청자성명</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="txt2-7">신청자성명</label>
+                                    <input type="text" id="txt2-7">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">E-mail</th>
+                            <td>
+                                <div class="email">
+                                    <div class="input md">
+                                        <label for="email1">email주소</label>
+                                        <input type="text" id="email1">
+                                    </div>
+                                    <span class="at">@</span>
+                                    <div class="input md">
+                                        <label for="email2">email주소</label>
+                                        <input type="text" id="email2">
+                                    </div>
+                                    <div class="select">
+                                        <label for="email3">선택</label>
+                                        <select id="email3">
+                                            <option value="">직접입력</option>
+                                            <option value="">옵션2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="guide" data-top="xxs">(예약확인 및 전자세금계산서 발송을 위해 반드시 필요합니다.)</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">전화번호(H.P)</th>
+                            <td>
+                                <div class="phone">
+                                    <div class="input sm">
+                                        <label for="phone1-1">전화번호</label>
+                                        <input type="text" id="phone1-1">
+                                    </div>
+                                    <span class="dash">-</span>
+                                    <div class="input sm">
+                                        <label for="phone1-2">전화번호</label>
+                                        <input type="text" id="phone1-2">
+                                    </div>
+                                    <span class="dash">-</span>
+                                    <div class="input sm">
+                                        <label for="phone1-3">전화번호</label>
+                                        <input type="text" id="phone1-3">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">전화번호(H.P)</th>
+                            <td>
+                                <div class="phone">
+                                    <div class="input sm">
+                                        <label for="phone2-1">전화번호</label>
+                                        <input type="text" id="phone2-1">
+                                    </div>
+                                    <span class="dash">-</span>
+                                    <div class="input sm">
+                                        <label for="phone2-2">전화번호</label>
+                                        <input type="text" id="phone2-2">
+                                    </div>
+                                    <span class="dash">-</span>
+                                    <div class="input sm">
+                                        <label for="phone2-3">전화번호</label>
+                                        <input type="text" id="phone2-3">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">인원</th>
+                            <td>
+                                <div class="input sm">
+                                    <label for="num">인원</label>
+                                    <input type="text" id="num">
+                                </div>
+                                <span data-left="xxs">명</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">사용목적</th>
+                            <td>
+                                <div class="input expanded">
+                                    <label for="txt2-8">사용목적</label>
+                                    <input type="text" id="txt2-8">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">장비사용</th>
+                            <td>
+                                <span data-right="md">대회의실(33,000원)</span>
+                                <div class="radio">
+                                    <input type="radio" id="r3-1" name="rg-3">
+                                    <label for="r3-1">사용</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="r3-2" name="rg-3">
+                                    <label for="r3-2">미사용</label>
+                                </div>
+                                <div class="guide" data-top="xs">
+                                    * 대회의실 장비내용 : 빔프로젝트, 스크린, 화이트보드, 마이크(유선2개/무선1개)
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">필요장비</th>
+                            <td>
+                                <div class="textarea">
+                                    <label for="ta1">필요장비</label>
+                                    <textarea id="ta1" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="size" data-top="xs">0 / 400 Byte</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">비밀번호</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="pwd1">비밀번호</label>
+                                    <input type="password" id="pwd1">
+                                </div>
+                                <span class="guide" data-left="xs">(예약 확인을 위해 반드시 필요합니다.)</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="aligner" data-top="sm">
+                <div class="right">
+                    <a href="#" class="btn">다음</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/component.js"></script>
+</body>
+</html>

@@ -57,6 +57,7 @@
     .near {
         > div {
             display: table;
+            table-layout: fixed;
             width: 100%;
             padding: 10px 0;
             border-top: 1px solid #d3d3d3;
@@ -74,6 +75,9 @@
 
         .value {
             display: table-cell;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             position: relative;
             padding: 0 30px;
             color: #666;

@@ -22,8 +22,8 @@
     }
 }
 
-@each $direction in (top, bottom) {
-    @each $key, $value in (xs: 10px, sm: 20px, md: 30px, lg: 40px, xl: 50px, xxl: 60px) {
+@each $direction in (top, right, bottom, left) {
+    @each $key, $value in (xxs: 5px, xs: 10px, sm: 20px, md: 30px, lg: 40px, xl: 50px, xxl: 60px) {
         *[data-#{$direction}="#{$key}"] {
             margin-#{$direction}: $value;
         }

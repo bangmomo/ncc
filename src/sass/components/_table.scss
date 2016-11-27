@@ -29,25 +29,32 @@ caption {
             vertical-align: middle;
         }
 
-        thead {
-            tr {
-                &:last-child {
-                    th {
-                        border-bottom: 1px solid #bdd1e9;
-                    }
-                }
-            }
+        th {
+            color: #000;
+            font-weight: 600;
+            font-size: 15px;
 
+            &.text-left {
+                text-align: left;
+            }
+        }
+
+        thead {
             th {
                 background-color: #f2f6fb;
-                color: #000;
-                font-weight: 600;
-                font-size: 15px;
+            }
+
+            tr {
+                + tr {
+                    th {
+                        border-top: 1px solid #d3d3d3;
+                    }
+                }
             }
         }
 
         tbody {
-            td {
+            th, td {
                 border-top: 1px solid #d3d3d3;
                 font-size: 14px;
 
@@ -108,6 +115,14 @@ caption {
 
                     &[scope="row"] {
                         text-align: center;
+                    }
+
+                    &.center {
+                        text-align: center;
+                    }
+
+                    &.text-right {
+                        text-align: right;
                     }
                 }
             }

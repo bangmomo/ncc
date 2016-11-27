@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+
+    + .checkbox {
+        margin-left: 40px;
+    }
+
+    input {
+        @include hidden;
+
+        &:checked {
+            + label {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    label {
+        display: block;
+        color: #696969;
+        font-size: 15px;
+        cursor: pointer;
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width:  18px;
+            height: 18px;
+            border: 1px solid #a6a6a6;
+            background-color: #fff;
+        }
+
+        &::after {
+            content: " ";
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            width: 12px;
+            height: 12px;
+            background-color: $point-color1;
+        }
+    }
+}
+
+

@@ -1,9 +1,16 @@
 @charset "UTF-8";
 
 .tab {
+    &.equal {
+        .nav {
+            table-layout: fixed;
+        }
+    }
+
     .nav {
         display: table;
         width: 100%;
+        margin-bottom: 20px;
 
         > li {
             display: table-cell;

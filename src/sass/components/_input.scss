@@ -9,6 +9,22 @@
         max-width: none;
     }
 
+    &.sm {
+        max-width: 100px;
+    }
+
+    &.md {
+        max-width: 200px;
+    }
+
+    &.lg {
+        max-width: 300px;
+    }
+
+    &.xl {
+        max-width: 400px;
+    }
+
     label {
         @include hidden;
     }

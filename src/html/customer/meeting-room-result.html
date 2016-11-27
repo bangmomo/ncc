@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="contents">
+        <div class="cont-body">
+            <div class="tab equal">
+                <ul class="nav">
+                    <li><a href="#">회의실 안내</a></li>
+                    <li><a href="#">예약하기</a></li>
+                    <li class="active"><a href="#">결과조회</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4 class="sub-title">예약 결과 조회하기</h4>
+                <ul class="desc-list">
+                    <li>
+                        예약했을 당시 기입하셨던 '이메일 주소와 비밀번호' 를 입력하시면, 고객님께서 예약하셨던 내용을 확인하실 수 있습니다.
+                    </li>
+                </ul>
+
+                <div class="table detail-type" data-top="xs">
+                    <table>
+                        <caption><span>예약결과 조회 정보 입력을 위한 표</span></caption>
+                        <colgroup class="table-col">
+                            <col style="width: 20%">
+                            <col style="width: 80%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">이메일</th>
+                            <td>
+                                <div class="email">
+                                    <div class="input md">
+                                        <label for="email1">email주소</label>
+                                        <input type="text" id="email1">
+                                    </div>
+                                    <span class="at">@</span>
+                                    <div class="input md">
+                                        <label for="email2">email주소</label>
+                                        <input type="text" id="email2">
+                                    </div>
+                                    <div class="select">
+                                        <label for="email3">선택</label>
+                                        <select id="email3">
+                                            <option value="">직접입력</option>
+                                            <option value="">옵션2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>
+                                <div class="input lg">
+                                    <label for="pwd1">비밀번호</label>
+                                    <input type="password" id="pwd1">
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="aligner" data-top="sm">
+                    <div class="right">
+                        <a href="#" class="btn">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/component.js"></script>
+</body>
+</html>
