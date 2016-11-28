@@ -15,6 +15,7 @@ import babel from 'gulp-babel';
 import Cache from 'gulp-file-cache';
 import nodemon from 'gulp-nodemon';
 import browserSync from 'browser-sync';
+import changed from 'gulp-changed';
 
 let cache = new Cache();
 
@@ -105,6 +106,7 @@ gulp.task('html', () => {
 
 gulp.task('images', () => {
     return gulp.src(SRC.IMAGES)
+        .pipe(changed(DEST.IMAGES))
         .pipe(imagemin())
         .pipe(gulp.dest(DEST.IMAGES));
 });
