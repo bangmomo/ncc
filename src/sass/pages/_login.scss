@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.login {
+    background: url(../../images/login-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login-area {
+    @include alignXY;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+    .logo {
+        img {
+            width: 200px;
+        }
+    }
+
+    .input-area {
+        margin-top: 20px;
+
+        .input {
+            input {
+                height: 40px;
+                padding: 8px 10px;
+            }
+        }
+    }
+
+    .btn-login {
+        .btn {
+            background-color: #00C8D0;
+        }
+    }
+
+    .util {
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}

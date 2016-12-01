@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.reservation-guide {
+    @include clearfix;
+
+    > li {
+        float: left;
+        position: relative;
+        padding-left: 28px;
+
+        + li {
+            margin-left: 20px;
+        }
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ccc;
+        }
+    }
+}

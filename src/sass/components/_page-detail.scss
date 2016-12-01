@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.page-detail {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #dadada;
+
+    .thumb {
+        display: table-cell;
+        position: relative;
+        width: 277px;
+        vertical-align: middle;
+    }
+
+    .desc {
+        display: table-cell;
+        padding: 25px 35px;
+        background-color: #f7f7f7;
+        color: #515151;
+        font-size: 15px;
+        vertical-align: middle;
+    }
+}

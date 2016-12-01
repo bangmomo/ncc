@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.tab {
+    &.equal {
+        .nav {
+            table-layout: fixed;
+        }
+    }
+
+    .nav {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+
+        > li {
+            display: table-cell;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid $point-color1;
+            border-left: 1px solid #ccc;
+            background-color: #ededed;
+            text-align: center;
+            vertical-align: middle;
+
+            &.active {
+                border-top: 1px solid $point-color1;
+                border-left: 1px solid $point-color1;
+                border-bottom: 1px solid #fff;
+                background-color: #fff;
+
+                + li {
+                    border-left: 1px solid $point-color1;
+                }
+
+                &:last-child {
+                    border-right: 1px solid $point-color1;
+                }
+
+                a {
+                    color: $point-color1;
+                }
+            }
+
+            &:last-child {
+                border-right: 1px solid #ccc;
+            }
+
+            > a {
+                display: block;
+                padding: 14px 0;
+                
+                &:hover {
+                    color: $point-color1;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &.sm {
+        .nav {
+            @include clearfix;
+            display: block;
+
+            > li {
+                display: block;
+                float: left;
+                width: 14.28571428%;
+                border: 1px solid #4f77a8;
+                background-color: #fff;
+
+
+                &.active {
+                    border-top: 1px solid #4f77a8;
+                    border-right: 1px solid #4f77a8;
+                    background-color: #4f77a8;
+
+                    a {
+                        color: #fff;
+                    }
+
+                    + li {
+                        border-left: 1px solid #4f77a8;
+                    }
+                }
+
+
+                > a {
+                    padding: 8px 0;
+                    color: #4f77a8;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

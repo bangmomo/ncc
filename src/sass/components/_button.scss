@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.btn {
+    display: inline-block;
+    min-width: 100px;
+    height: 44px;
+    padding: 9px 10px 8px;
+    background-color: $point-color1;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+
+    &.sm {
+        min-width: 70px;
+        height: 32px;
+        padding: 7px 10px 6px;
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    &.dark {
+        border: 1px solid #525252;
+        background-color: #666;
+        color: #fff;
+    }
+
+    &.white {
+        border: 1px solid #525252;
+        color: #666;
+        background-color: #fff;
+    }
+
+    &.link-type {
+        min-width: 0;
+        height: 35px;
+        padding: 7px 15px;
+        border: 1px solid #bdbdbd;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 1px 1px #ddd;
+        color: #434343;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    &.i-download {
+        &::before {
+            content: " ";
+            display: inline-block;
+            margin-right: 5px;
+            width: 10px;
+            height: 12px;
+            background: url(../../images/common/icon-download.png) no-repeat;
+        }
+    }
+}
+
+

@@ -1,0 +1,69 @@
+.clearfix {
+    @include clearfix;
+}
+.expanded {
+    width: 100%;
+}
+.point-color-red {
+    color: #ff1c0a !important;
+}
+.point-color1 {
+    color: $point-color1 !important;
+}
+.bold {
+    font-weight: 700;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.icon {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+.dash {
+    margin: 0 5px;
+}
+.img-wrap {
+    &.expanded {
+        img {
+            width: 100%;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+.file-download {
+    font-size: 0;
+    vertical-align: middle;
+
+    + .file-download {
+        margin-left: 5px;
+
+        &::before {
+            content: ",";
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 13px;
+            vertical-align: middle;
+        }
+    }
+
+    img {
+        width: 14px;
+        margin-right: 5px;
+    }
+
+    a {
+        color: $point-color1;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 14px;
+        vertical-align: middle;
+    }
+}

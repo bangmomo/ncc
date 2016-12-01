@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0;
+
+    > a {
+        display: inline-block;
+        overflow: hidden;
+        width: 35px;
+        height: 35px;
+        background-color: #e4e4e4;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        text-indent:-9999px;
+
+        &:hover,
+        &:focus {
+            background-color: #ccc;
+        }
+
+        &.first {
+            margin-right: 4px;
+            background-image: url(../../images/common/p-first.png);
+        }
+
+        &.prev {
+            background-image: url(../../images/common/p-prev.png);
+        }
+
+        &.next {
+            background-image: url(../../images/common/p-next.png);
+        }
+
+        &.last {
+            margin-left: 4px;
+            background-image: url(../../images/common/p-last.png);
+        }
+    }
+
+    .num {
+        @include clearfix;
+        display: inline-block;
+        margin: 0 12px;
+
+        a {
+            display: block;
+            float: left;
+            width: 35px;
+            height: 35px;
+            padding: 6px 0;
+            color: #565656;
+            text-align: center;
+            font-size: 15px;
+            
+            &:hover,
+            &:focus {
+                background-color: #efefef;
+            }
+
+            &.active {
+                background-color: $point-color1;
+                color: #fff;
+            }
+        }
+    }
+}
+
