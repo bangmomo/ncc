@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+        header .inner {
+            width: 960px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+        header h1 {
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        header h1 .sub-title {
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        header h1 .main-title {
+            display: block;
+            font-size: 25px;
+            letter-spacing: -1px;
+        }
+        header h1::after {
+            content: " ";
+            display: block;
+            width: 90px;
+            height: 3px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .docs-contents {
+            width: 960px;
+            margin: 0 auto;
+            padding: 90px 0 150px;
+        }
+        .docs-section + .docs-section {
+            margin-top: 50px;
+        }
+        .docs-section .docs-title {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+            color: #333;
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .docs-section .docs-case {
+            padding: 20px 0;
+        }
+        .docs-section .docs-case + .docs-case {
+            border-top: 1px solid #eee;
+        }
+        .docs-section .docs-case .docs-key {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .docs-section .tip {
+            position: relative;
+            padding-left: 20px;
+            color: #00bcd4;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .docs-section .tip::before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            width: 15px;
+            height: 1px;
+            background-color: #00bcd4;
+        }
+        .docs-section .selection-group {
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .docs-section .selection-group li {
+            float: left;
+        }
+        .docs-section .selection-group li + li {
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #fbfbfb;
+        }
+        footer .inner {
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        footer .snb {
+            float: left;
+            font-size: 13px;
+        }
+        footer .snb a {
+            color: #00bcd4;
+        }
+        footer .copyright {
+            float: right;
+            font-size: 13px;
+        }
+        footer .copyright a {
+            color: #00bcd4;
+            font-weight: 900;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <span class="sub-title">GUIDE</span>
+                <span class="main-title">DOCUMENTATION</span>
+            </h1>
+        </div>
+    </header>
+
+    <div class="docs-contents">
+        <div class="docs-section">
+            <div class="docs-title">BUTTON, ALIGNER</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="aligner">
+                        <div class="left">
+                            <a href="#" class="btn">목록</a>
+                            <a href="#" class="btn">삭제</a>
+                        </div>
+
+                        <div class="right">
+                            <a href="#" class="btn sm dark">검색</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="aligner">
+                        <div class="left">
+                            <a href="#" class="btn link-type">복지부정 신고서 작성하기</a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="btn link-type i-download">AI 파일 다운로드</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">TABLE</div>
+            <div class="docs-case">
+                <div class="docs-key">기본형</div>
+                <div class="docs-value">
+                    <div class="table">
+                        <table>
+                            <caption><span>주요사업 목록</span></caption>
+                            <colgroup class="table-col">
+                                <col style="width: 10%">
+                                <col style="width: 60%">
+                                <col style="width: 15%">
+                                <col style="width: 15%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">파일</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>19</td>
+                                <td class="subject"><a href="#">규정 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td class="subject"><a href="#">규정 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td class="subject"><a href="#">인사규정시행세척 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td class="subject"><a href="#">규정 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr><tr>
+                                <td>15</td>
+                                <td class="subject"><a href="#">규정 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td class="subject"><a href="#">규정 개정(안) 예고 및 의견수렴</a></td>
+                                <td>2016.11.16</td>
+                                <td><span class="icon"><img src="../../images/common/icon-file.png" alt="첨부파일"></span></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-key">상세형</div>
+                <div class="docs-value">
+                    <div class="table detail-type">
+                        <table>
+                            <caption><span>방만경영 정상화 이행실적을 분야, 가이드라인 등, 운영현황, 개선내용으로 나타낸 표</span></caption>
+                            <colgroup class="table-col">
+                                <col style="width: 20%">
+                                <col style="width: 30%">
+                                <col style="width: 25%">
+                                <col style="width: 25%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">분야</th>
+                                <th scope="col">가이드라인 등</th>
+                                <th scope="col">운영현황</th>
+                                <th scope="col">개선내용</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>퇴직금</td>
+                                <td>비위행위자에 퇴직금 감액 및<br>명예퇴직금 지급제한</td>
+                                <td>관련 규정 없음</td>
+                                <td>인사규정 개정<br>연봉제보수규정 개정</td>
+                            </tr>
+                            <tr>
+                                <td>교육비 및 보육비</td>
+                                <td>자녀 영어캠프 등 사교육비지원 제한</td>
+                                <td>직원자녀 영어캠프지원</td>
+                                <td>지원제도 폐지(내부문서 변경)</td>
+                            </tr>
+                            <tr>
+                                <td>교육비 및 보육비</td>
+                                <td>영&middot;유아 보육료 또는 양육수당 지원 제한</td>
+                                <td>영&middot;유아 육아수당 지급</td>
+                                <td>지원제도 폐지<br>(제수당 및 복리후생비지급 시행세칙 개정)</td>
+                            </tr>
+                            <tr>
+                                <td>의료비</td>
+                                <td>건강검진비 과도 지원 제한</td>
+                                <td>공무원수준 이상 지원</td>
+                                <td>지원금액 감액(내부문서 변경)</td>
+                            </tr>
+                            <tr>
+                                <td>휴가 및 휴직제도</td>
+                                <td>
+                                    국가공무원 복무규정 준수<br>
+                                    -병가 : 연간60일한도 운영<br>
+                                    -장기근속자 안식휴가 운영불가
+                                </td>
+                                <td>
+                                    휴가운영현황<br>
+                                    -병가 : 연간90일<br>
+                                    -장기근속휴가 운영
+                                </td>
+                                <td>
+                                    병가 : 연간60일<br>
+                                    장기근속휴가 폐지<br>
+                                    (복무규정 개정)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>경영인사</td>
+                                <td>경영&middot;인사권에 관한 제약행위 금지</td>
+                                <td>
+                                    선출직 노동조합 간부<br>
+                                    부서변경인사 사전합의
+                                </td>
+                                <td>
+                                    선출직 노동조합 간부<br>
+                                    부서변경인사 사전협의(단체협약 개정)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">기타</td>
+                                <td>
+                                    업무상 부상 또는 질병에 대한 급여는
+                                    「산업재해보상보험법」 의 휴업급여 외
+                                    지급제한
+                                </td>
+                                <td>생계보조비 추가지원</td>
+                                <td>휴업금여 외 지금제한<br>(복지규정 개정)</td>
+                            </tr>
+                            <tr>
+                                <td>공무원 연금법 수준의 재해부조금 지급<br>
+                                    -공무원기준소득월액 3.9~1.3배</td>
+                                <td>
+                                    재해부조지급률<br>
+                                    - 월봉600%~100%
+                                </td>
+                                <td>
+                                    지급률 하향조정<br>
+                                    - 월액400%~100% (복지규정 개정)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>직원단체보험 선택적 복지 포인트 활용</td>
+                                <td>별도 직원단체 상해보험 지원</td>
+                                <td>단체보험운영 폐지</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">PAGINATION</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="pagination">
+                        <a href="#" class="first">첫페이지</a>
+                        <a href="#" class="prev">이전페이지</a>
+                        <div class="num">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                        </div>
+                        <a href="#" class="next">다음페이지</a>
+                        <a href="#" class="last">마지막페이지</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">DETAIL AREA</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="detail-area">
+                        <div class="title">'16년 10월 반부패, 청렴의 날 운영결과</div>
+                        <div class="util">
+                            <span class="date">2016-11-16</span>
+                            <span class="file-download">
+                                <img src="../../images/common/icon-file.png" alt="">
+                                <a href="#">10월 반부패 청렴의 날 운영결과.pdf</a>
+                            </span>
+                        </div>
+                        <div class="article">
+                            우리공단에서는 반부패 청렴의식 제고를 위하여 10월 반부패 청렴의 날을 아래와 같이 운영하였습니다.<br>
+                            <br>
+                            - 아      래-<br>
+                            <br>
+                            ㅇ 일자 : '16.10.5(수)<br>
+                            <br>
+                            ㅇ 주요내용<br>
+                            <br>
+                            - 휴대폰 문자 알리미 운영(공익신고 보상금 관련)<br>
+                            <br>
+                            - 청렴주의보 발령(공익신고 정의 및 관련 정보)<br>
+                            <br>
+                            - 반부패 청렴교육 실시(동영상: 극한직업,신입사원편) + 2015년 윤리청렴 UCC공모전 최우수작<br>
+                            <br>
+                            붙임 10월 반부패 청렴의 날 운영 결과보고
+                        </div>
+                        <div class="near">
+                            <div class="prev">
+                                <div class="key">이전글</div>
+                                <div class="value"><a href="#">'16년 하반기 청렴바름이 워크숍 및「청탁금지법」교육개최</a></div>
+                            </div>
+                            <div class="next">
+                                <div class="key">다음글</div>
+                                <div class="value"><a href="#">본사 임직원 청탁금지법 교육 및 청렴결의대회 개최</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">ACCORDION</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="accordion">
+                        <div class="head">
+                            <div class="cell">No.</div>
+                            <div class="cell">제목</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="item-head">
+                                    <a href="#" title="내용보기">
+                                        <div class="cell">19</div>
+                                        <div class="cell subject">2016년 NCS기반 고졸직원 모집공고 알림</div>
+                                    </a>
+                                </div>
+                                <div class="item-article">
+                                    <div class="file">
+                                        <span>첨부파일 : </span>
+                                        <a href="#">2016년 NCS기반 채용 공고(고졸 5급).pdf</a>
+                                        <a href="#">한국산업단지공단 직무기술서(세무회계).pdf</a>
+                                    </div>
+                                    <div class="article">
+                                        산업단지 개발관리 및 기업체 산업활동지원 전문기관인 한국산업단지공단에서 미래를 함께 열어나갈 창의적이고 유능한
+                                        인재를 모집합니다.<br>
+                                        1. 모집분야 및 선발인원 : 신입직(5급) / 세무회계분야 / 0명<br>
+                                        2. 응시자격 : 고졸자 또는 '17.2월 고등학교 졸업예정자 (세부내용 첨부 참조)<br>
+                                        3. 원서접수일 : '16.9.28(수) ~ 10.11(화) 17:00까지<br>
+                                        4. 접수방법 : 채용사이트를 통해 접수 (https://kicox.saramin.co.kr)
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <a href="#" title="내용보기">
+                                        <div class="cell">18</div>
+                                        <div class="cell subject">[직무소개] 재무관리</div>
+                                    </a>
+                                </div>
+                                <div class="item-article">
+                                    <div class="file">
+                                        <span>첨부파일 : </span>
+                                        <a href="#">2016년 NCS기반 채용 공고(고졸 5급).pdf</a>
+                                        <a href="#">한국산업단지공단 직무기술서(세무회계).pdf</a>
+                                    </div>
+                                    <div class="article">
+                                        산업단지 개발관리 및 기업체 산업활동지원 전문기관인 한국산업단지공단에서 미래를 함께 열어나갈 창의적이고 유능한
+                                        인재를 모집합니다.<br>
+                                        1. 모집분야 및 선발인원 : 신입직(5급) / 세무회계분야 / 0명<br>
+                                        2. 응시자격 : 고졸자 또는 '17.2월 고등학교 졸업예정자 (세부내용 첨부 참조)<br>
+                                        3. 원서접수일 : '16.9.28(수) ~ 10.11(화) 17:00까지<br>
+                                        4. 접수방법 : 채용사이트를 통해 접수 (https://kicox.saramin.co.kr)
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <a href="#" title="내용보기">
+                                        <div class="cell">17</div>
+                                        <div class="cell subject">[직무소개] 기획_사업기획 및 전략</div>
+                                    </a>
+                                </div>
+                                <div class="item-article">
+                                    <div class="file">
+                                        <span>첨부파일 : </span>
+                                        <a href="#">2016년 NCS기반 채용 공고(고졸 5급).pdf</a>
+                                        <a href="#">한국산업단지공단 직무기술서(세무회계).pdf</a>
+                                    </div>
+                                    <div class="article">
+                                        산업단지 개발관리 및 기업체 산업활동지원 전문기관인 한국산업단지공단에서 미래를 함께 열어나갈 창의적이고 유능한
+                                        인재를 모집합니다.<br>
+                                        1. 모집분야 및 선발인원 : 신입직(5급) / 세무회계분야 / 0명<br>
+                                        2. 응시자격 : 고졸자 또는 '17.2월 고등학교 졸업예정자 (세부내용 첨부 참조)<br>
+                                        3. 원서접수일 : '16.9.28(수) ~ 10.11(화) 17:00까지<br>
+                                        4. 접수방법 : 채용사이트를 통해 접수 (https://kicox.saramin.co.kr)
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <a href="#" title="내용보기">
+                                        <div class="cell">16</div>
+                                        <div class="cell subject">[직무소개]제조 및 생산관리</div>
+                                    </a>
+                                </div>
+                                <div class="item-article">
+                                    <div class="file">
+                                        <span>첨부파일 : </span>
+                                        <a href="#">2016년 NCS기반 채용 공고(고졸 5급).pdf</a>
+                                        <a href="#">한국산업단지공단 직무기술서(세무회계).pdf</a>
+                                    </div>
+                                    <div class="article">
+                                        산업단지 개발관리 및 기업체 산업활동지원 전문기관인 한국산업단지공단에서 미래를 함께 열어나갈 창의적이고 유능한
+                                        인재를 모집합니다.<br>
+                                        1. 모집분야 및 선발인원 : 신입직(5급) / 세무회계분야 / 0명<br>
+                                        2. 응시자격 : 고졸자 또는 '17.2월 고등학교 졸업예정자 (세부내용 첨부 참조)<br>
+                                        3. 원서접수일 : '16.9.28(수) ~ 10.11(화) 17:00까지<br>
+                                        4. 접수방법 : 채용사이트를 통해 접수 (https://kicox.saramin.co.kr)
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">GALLERY LIST</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="gallery-list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img1.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img2.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img3.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/no-img.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img2.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img3.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/no-img.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img2.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb"><img src="../../images/dummy/gallery-img3.png" alt=""></div>
+                                    <div class="title">[본사]노사가 함께하는 사랑의 집수랑의 집수리</div>
+                                    <div class="date">2016-11-03</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">INPUT</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="input">
+                        <label for="txt1">입력</label>
+                        <input type="text" id="txt1">
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="input expanded">
+                        <label for="txt1-2">입력</label>
+                        <input type="text" id="txt1-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">TEXTAREA</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="textarea">
+                        <textarea id="ta1" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">SELECT</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="select">
+                        <label for="sel1">선택</label>
+                        <select id="sel1">
+                            <option value="">옵션1</option>
+                            <option value="">옵션2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="select expanded">
+                        <label for="sel1-2">선택</label>
+                        <select id="sel1-2">
+                            <option value="">옵션1</option>
+                            <option value="">옵션2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">SEARCH</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="search">
+                        <span>검색</span>
+                        <div class="select">
+                            <label for="sel2">검색조건</label>
+                            <select id="sel2">
+                                <option value="">제목</option>
+                                <option value="">내용</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="txt2">입력</label>
+                            <input type="text" id="txt2">
+                        </div>
+                        <div class="btn sm dark">검색</div>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="search">
+                        <span>검색</span>
+                        <div class="select">
+                            <label for="sel3">검색조건</label>
+                            <select id="sel3">
+                                <option value="">구분</option>
+                                <option value="">구분1</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="sel4">검색조건</label>
+                            <select id="sel4">
+                                <option value="">제목</option>
+                                <option value="">내용</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="txt3">입력</label>
+                            <input type="text" id="txt3">
+                        </div>
+                        <div class="btn sm dark">검색</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">SUB TITLE</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <em class="sub-title">봉사단 소개</em>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">PAGE DETAIL</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="page-detail">
+                        <div class="thumb"><img src="../../images/dummy/page-detail1.png" alt=""></div>
+                        <div class="desc">
+                            <ul class="desc-list">
+                                <li>
+                                    기업의 사회적 책임이라는 <em class="point-color1">사회적 요구에 부응</em>하고 고객, 지역, 사회와 나눔의 <em class="point-color1">사회공헌활동</em>을
+                                    전사적으로 전개하기 위하여 2006년 6월 한국산업단지공단 사회봉사단을 창단하였습니다.
+                                </li>
+                                <li>
+                                    그 동안 <em class="point-color1">미래를 위한 성공 프로젝트</em> 일환으로 일상생활 속 기부문화를 통해 나눔 문화를 확산하여
+                                    사회적 기업으로서 역할을 성실히 수행하기 위해 임직원을 대상으로 사랑의 성금을 모금하고
+                                    회사지원금(매칭그랜드 제도) 제도를 도입하여 이를 재원으로 다양한 사회공헌활동을 추진
+                                    중에 있습니다.
+                                </li>
+                                <li>
+                                    또한, 2011년 4월 지역본부 별로 운영되던 봉사단을 체계적인 사회공헌 활동을 위하여 KICOX
+                                    사랑회로 통합하였습니다.<br>
+                                    앞으로도 지역사회 소외계층에 꿈과 희망을 전파하여 이들로 하여금 용기와 자부심을 갖게 하고
+                                    사회일원으로서 더불어 살아갈 수 있도록 적극 후원하도록 노력하겠습니다.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">LINK DETAIL</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="link-detail">
+                        <em class="sub-title">복지부정 신고서 작성</em>
+                        - 링크 : <a href="#">복지부정 신고서 작성하기</a>
+                        <a href="#" class="btn link-type">복지부정 신고서 작성하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="link-detail">
+                        <em class="sub-title">한국산업단지공단의 CI를 사전 허가 없이 무단으로 사용할 시에는 관련 법령에 따른 법적 제재를 받을 수 있습니다.</em>
+                        - 링크 : <a href="#">AI 파일 다운로드</a>
+                        <a href="#" class="btn link-type i-download">AI 파일 다운로드</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">INQUIRY AREA</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="inquiry-area">
+                        <div class="admin-info">
+                            <div class="dept">
+                                <span>
+                                    담당부서
+                                    <em>공장설립팀</em>
+                                </span>
+                            </div>
+                            <div class="charger">
+                                <span>
+                                    책임자
+                                    <em>김재명 070-8895-7271</em>
+                                    <a href="#"><img src="../../images/common/icon-mail.png" alt="책임자에게 메일보내기"></a>
+                                </span>
+                            </div>
+                            <div class="admin">
+                                <span>
+                                    담당자
+                                    <em>박종룡 070-8895-7272</em>
+                                    <a href="#"><img src="../../images/common/icon-mail.png" alt="담당자에게 메일보내기"></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="research">
+                            <div class="question">
+                                열람하신 정보에 만족하십니까?
+                            </div>
+                            <div class="answer">
+                                <div class="radio">
+                                    <input type="radio" id="radio1" name="rg-1">
+                                    <label for="radio1">매우 만족</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="radio2" name="rg-1">
+                                    <label for="radio2">만족</label>
+                                </div>
+
+                                <div class="radio">
+                                    <input type="radio" id="radio3" name="rg-1">
+                                    <label for="radio3">보통</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="radio4" name="rg-1">
+                                    <label for="radio4">불만족</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="radio5" name="rg-1">
+                                    <label for="radio5">매우 불만족</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research">
+                            <div class="question">
+                                기타의견이 있으신가요?
+                            </div>
+                            <div class="answer">
+                                <div class="comment">
+                                    <div class="textarea">
+                                        <textarea id="ta1" cols="30" rows="10"></textarea>
+                                        <div class="byte">
+                                            <span class="current">0</span>
+                                            / 500 Byte
+                                        </div>
+                                    </div>
+                                    <div class="btn">확인</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">RADIO</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="radio">
+                        <input type="radio" id="r1" name="rg-1">
+                        <label for="r1">매우만족</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="r2" name="rg-1">
+                        <label for="r2">만족</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">CHECKBOX</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="checkbox">
+                        <input type="checkbox" id="c1" checked>
+                        <label for="c1">체크박스</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="c2">
+                        <label for="c2">체크박스</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">ADDRESS</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="address">
+                        <div class="zip-code">
+                            <div class="input sm">
+                                <label for="zipcode1">우편번호</label>
+                                <input type="text" id="zipcode1">
+                            </div>
+                            <span class="dash">-</span>
+                            <div class="input sm">
+                                <label for="zipcode2">우편번호</label>
+                                <input type="text" id="zipcode2">
+                            </div>
+                            <a href="#" class="btn sm white">우편번호검색</a>
+                        </div>
+                        <div class="input expanded">
+                            <label for="addr1">상세주소</label>
+                            <input type="text" id="addr1">
+                        </div>
+                        <div class="input expanded">
+                            <label for="addr2">상세주소</label>
+                            <input type="text" id="addr2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">E-MAIL</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="email">
+                        <div class="input md">
+                            <label for="email1">email주소</label>
+                            <input type="text" id="email1">
+                        </div>
+                        <span class="at">@</span>
+                        <div class="input md">
+                            <label for="email2">email주소</label>
+                            <input type="text" id="email2">
+                        </div>
+                        <div class="select">
+                            <label for="email3">선택</label>
+                            <select id="email3">
+                                <option value="">직접입력</option>
+                                <option value="">옵션2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">PHONE</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="phone">
+                        <div class="input sm">
+                            <label for="phone1">전화번호</label>
+                            <input type="text" id="phone1">
+                        </div>
+                        <span class="dash">-</span>
+                        <div class="input sm">
+                            <label for="phone2">전화번호</label>
+                            <input type="text" id="phone2">
+                        </div>
+                        <span class="dash">-</span>
+                        <div class="input sm">
+                            <label for="phone3">전화번호</label>
+                            <input type="text" id="phone3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-section">
+            <div class="docs-title">TAB</div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="tab">
+                        <ul class="nav">
+                            <li class="active"><a href="#">반부패 청렴자료</a></li>
+                            <li><a href="#">내부감사결과</a></li>
+                            <li><a href="#">부패행위자 현황공개</a></li>
+                            <li><a href="#">금지금품 처리현황</a></li>
+                            <li><a href="#">업무추진비 사용내역 공개</a></li>
+                            <li><a href="#">타기관 감사사례DB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="docs-case">
+                <div class="docs-value">
+                    <div class="tab sm">
+                        <ul class="nav">
+                            <li class="active"><a href="#">종합감사</a></li>
+                            <li><a href="#">기타감사</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/component.js"></script>
+</body>
+</html>
