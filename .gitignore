@@ -8,6 +8,7 @@ node_modules/
 
 # User-specific stuff:
 .idea/workspace.xml
+.idea/vcs.xml
 .idea/tasks.xml
 
 # Sensitive or high-churn files:
