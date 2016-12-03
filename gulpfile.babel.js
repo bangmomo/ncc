@@ -100,6 +100,7 @@ gulp.task('js', () => {
 
 gulp.task('html', () => {
     return gulp.src(SRC.HTML)
+        .pipe(changed(DEST.HTML))
         .pipe(htmlmin({collapseWhitespace: false}))
         .pipe(gulp.dest(DEST.HTML))
 });

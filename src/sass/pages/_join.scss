@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.join {
+    padding: 15px 10px;
+    background-color: $bg-color;
+
+    .inner {
+        padding: 10px;
+        background-color: $bg-white-color;
+    }
+}

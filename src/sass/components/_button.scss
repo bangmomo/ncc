@@ -2,9 +2,9 @@
 
 .btn {
     display: inline-block;
-    min-width: 100px;
+    min-width: 90px;
     height: 44px;
-    padding: 9px 10px 8px;
+    padding: 9px 8px 8px;
     background-color: $point-color1;
     color: #fff;
     font-weight: 600;
@@ -53,6 +53,12 @@
             height: 12px;
             background: url(../../images/common/icon-download.png) no-repeat;
         }
+    }
+
+    &.fat {
+        height: 60px;
+        padding: 15px 10px;
+        font-size: 20px;
     }
 }
 
