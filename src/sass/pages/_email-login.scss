@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*.login {
+    background: url(../../images/common/login-bg.jpg) no-repeat;
+    background-size: cover;
+}*/
+
+.email-login {
+    margin-top: 0;
+    background-color: $bg-color;
+}
+
+.email-login-area {
+    @include alignXY;
+    width: 100%;
+    padding: 20px;
+
+    .logo {
+        text-align: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .login-util {
+        margin-top: 15px;
+        color: #888;
+        text-align: center;
+
+        .pw-find {
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                content: "|";
+                display: block;
+                position: absolute;
+                top: -1px;
+                left: 5px;
+                color: #888;
+            }
+        }
+    }
+}

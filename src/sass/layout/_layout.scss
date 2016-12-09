@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 html,
-body,
-.container {
-    /*height: 100%;*/
+body {
+    height: 100%;
 }
 
 .container {
+    min-height: 100%;
     margin-top: 50px;
     transition: transform 0.4s;
 }
@@ -15,12 +15,11 @@ body,
     .gnb-container {
         transform: translateX(0%);
     }
-    .common-header {
-        transform: translateX(80%);
-    }
+}
 
-    .container {
-        transform: translateX(80%);
+.open-mypage {
+    .mypage-container {
+        transform: translateX(0%);
     }
 }
 
@@ -41,8 +40,9 @@ body,
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -100%;
-    width: 345px;
+    left: 65px;
+    right: 0;
     transform: translateX(100%);
-    background-color: #000;
+    transition: transform 0.4s;
+    background-color: #999;
 }

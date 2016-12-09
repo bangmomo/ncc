@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
-.login {
+/*.login {
     background: url(../../images/common/login-bg.jpg) no-repeat;
     background-size: cover;
+}*/
+
+.login {
+    margin-top: 0;
+    background-color: $bg-color;
 }
 
 .login-area {
@@ -12,31 +17,101 @@
     text-align: center;
 
     .logo {
+        margin-bottom: 30px;
+
         img {
             width: 200px;
         }
     }
+    
+    .join-menu {
+        > a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 50px;
+            padding: 15px 0 15px 80px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: left;
 
-    .input-area {
-        margin-top: 20px;
+            + a {
+                margin-top: 8px;
+            }
+        }
+        
+        .join-kakao {
+            background-color: #fbe300 ;
 
-        .input {
-            input {
-                height: 40px;
-                padding: 8px 10px;
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 20px;
+                width: 38px;
+                height: 36px;
+                background: url("../../images/common/icon-kakao.png") no-repeat center;
+            }
+        }
+        
+        .join-naver {
+            background-color: #1fbc02;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 20px;
+                width: 38px;
+                height: 36px;
+                background: url("../../images/common/icon-naver.png") no-repeat center;
+            }
+        }
+        
+        .join-facebook {
+            background-color: #3b5998;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 20px;
+                width: 38px;
+                height: 36px;
+                background: url("../../images/common/icon-facebook.png") no-repeat center;
+            }
+        }
+        
+        .join-email {
+            background-color: #36424d;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 20px;
+                width: 38px;
+                height: 36px;
+                background: url("../../images/common/icon-email.png") no-repeat center;
             }
         }
     }
 
-    .btn-login {
-        .btn {
-            background-color: #00C8D0;
-        }
-    }
+    .join-util {
+        margin-top: 15px;
+        font-size: 11px;
+        color: #888;
 
-    .util {
-        color: #fff;
-        font-weight: 700;
-        font-size: 15px;
+        .login {
+            margin-left: 15px;
+            color: $base-color;
+            font-weight: 700;
+            text-decoration: underline;
+        }
     }
 }

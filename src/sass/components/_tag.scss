@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
 .guide-msg {
+     margin-top: 3px;
+     color: #999;
+     font-size: 13px;
+ }
+
+.guide-msg-error {
     margin-top: 3px;
-    color: #999;
+    color: #ff0842;
     font-size: 13px;
 }
 

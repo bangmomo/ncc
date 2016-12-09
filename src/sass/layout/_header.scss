@@ -33,10 +33,11 @@
 .common-header {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
   height: 50px;
-  border-bottom: 1px solid $border-color;
+  z-index: 100;
+  background-color: $bg-white-color;
+  border-bottom: 1px solid $base-color;
   transition: transform 0.4s;
 
   .header-menu {
@@ -102,8 +103,6 @@
         margin-top: 6px;
       }
     }
-
-
   }
 
   .logo {
@@ -116,7 +115,7 @@
     }
   }
 
-  .header-setting {
+  .header-mypage {
     position: absolute;
     top: 0;
     right: 0;
