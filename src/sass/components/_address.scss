@@ -7,9 +7,12 @@
 
     .zip-code {
         display: flex;
-        flex: 1;
         justify-content: center;
         align-items: center;
+
+        .input {
+            flex: 1;
+        }
 
         .btn {
             margin-left: 10px;
