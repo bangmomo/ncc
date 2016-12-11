@@ -7,10 +7,12 @@
     .inner {
         padding: 10px;
         background-color: $bg-white-color;
+    }
 
-        .page-title {
-            font-size: 20px;
-            font-weight: 700;
-        }
+    .page-title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $point-color1;
+        font-size: 20px;
+        font-weight: 700;
     }
 }

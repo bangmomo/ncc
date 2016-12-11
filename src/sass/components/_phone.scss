@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
-.email {
-    .at {
-        margin: 0 5px;
+.phone {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    .dash {
+        flex-basis: auto;
     }
 }
 
