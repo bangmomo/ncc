@@ -97,13 +97,13 @@
 
         .prev {
             .key {
-                background: url(../../images/common/icon-prev-cont.png) no-repeat 85% 50%;
+                background: url(#{$path}common/icon-prev-cont.png) no-repeat 85% 50%;
             }
         }
 
         .next {
             .key {
-                background: url(../../images/common/icon-next-cont.png) no-repeat 85% 50%;
+                background: url(#{$path}common/icon-next-cont.png) no-repeat 85% 50%;
             }
         }
     }

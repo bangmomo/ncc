@@ -22,20 +22,20 @@
 
         &.first {
             margin-right: 4px;
-            background-image: url(../../images/common/p-first.png);
+            background-image: url(#{$path}common/p-first.png);
         }
 
         &.prev {
-            background-image: url(../../images/common/p-prev.png);
+            background-image: url(#{$path}common/p-prev.png);
         }
 
         &.next {
-            background-image: url(../../images/common/p-next.png);
+            background-image: url(#{$path}common/p-next.png);
         }
 
         &.last {
             margin-left: 4px;
-            background-image: url(../../images/common/p-last.png);
+            background-image: url(#{$path}common/p-last.png);
         }
     }
 

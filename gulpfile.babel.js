@@ -16,6 +16,7 @@ import Cache from 'gulp-file-cache';
 import nodemon from 'gulp-nodemon';
 import browserSync from 'browser-sync';
 import changed from 'gulp-changed';
+import cleanCss from 'gulp-clean-css';
 
 let cache = new Cache();
 
@@ -72,15 +73,11 @@ gulp.task('sass', () => {
     return gulp.src(SRC.SASS)
         .pipe(sourcemaps.init())
         .pipe(sass({
-            imagePath: DEST.IMAGES,
             outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'IE 9', 'iOS >= 6'],
+            browsers: ['last 2 versions', 'IE 9'],
             cascade: false
-        }))
-        .pipe(urlAdjuster({
-            replace:  ['../..','..'],
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(SRC.CSS))
