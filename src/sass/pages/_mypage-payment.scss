@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.mypage-payment {
+    background: $bg-color;
+    padding: 15px 10px;
+    
+    .section {
+        padding: 10px;
+        background: $bg-white-color;
+    }
+    
+    .total {
+        text-align: right;
+
+        span {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    }
+}

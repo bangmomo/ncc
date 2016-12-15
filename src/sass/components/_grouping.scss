@@ -3,6 +3,8 @@
 .line-grouping {
     display: flex;
     width: 100%;
+    justify-items: center;
+    align-items: center;
 
     +.line-grouping {
         margin-top: 5px;
