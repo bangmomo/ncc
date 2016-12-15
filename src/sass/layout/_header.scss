@@ -6,7 +6,8 @@
   right: 0;
   left: 0;
   height: 50px;
-  background-color: #222;
+  background: linear-gradient(to right, $base-point-color1, $base-point-color2);
+  box-shadow: 1px 8px 15px rgba(165,78,255,0.4);
 
   .header-close {
     display: block;
