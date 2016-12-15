@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.mypage-point {
+    background: $bg-color;
+
+    .point-list {
+        li {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border: 1px solid $border-color;
+            background: $bg-white-color;
+
+            + li {
+                margin-top: 8px;
+            }
+
+            .order-info {
+                display: table-cell;
+                padding: 10px 15px;
+
+                .order-num {
+                    font-weight: 700;
+                }
+
+                .order-subject {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin-top: 8px;
+                }
+            }
+
+            .order-pay {
+                display: table-cell;
+                width: 125px;
+                border-left: 1px solid $border-color;
+                font-size: 18px;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+}
