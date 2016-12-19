@@ -1,16 +1,20 @@
 $font-size:          13px;
 $line-height:        1.5;
-$font-gothic:        "Malgun Gothic", sans-serif;
-$font-lato:          "Lato", "Malgun Gothic", sans-serif;
+$font-square:        "NanumSquare", "Malgun Gothic", sans-serif;
 
-$base-point-color1:   #6866ff;
+/*메인 칼라*/
+$base-point-color1:   #3593e2;
 $base-point-color2:   #a54eff;
-$point-color1:        #ff66c1;
-$point-color2:        #ff6671;
-$bg-white-color:      #fff;
-$bg-color:            #eaeaea;
-$border-color:        #d3d3d3;
+$point-color1:        #a44fff;
 
-$base-color:          #666;
+/*배경 칼라 */
+$bg-white-color:      #fff;
+$bg-color:            #ecf3ff;
+
+/*라인 칼라 */
+$border-color:        #e5e5e5;
+
+/*버튼 칼라 */
+$btn-color:           #2b99dd;
 
 $path:                "../images/";
