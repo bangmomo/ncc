@@ -16,10 +16,18 @@
     padding: 20px;
 
     .logo {
-        text-align: center;
+        width: 305px;
+        margin: 0 auto 30px;
 
         img {
-            width: 200px;
+            max-width: 100%;
+        }
+    }
+
+    .key {
+        img  {
+            width: 18px;
+            height: 18px;
         }
     }
 

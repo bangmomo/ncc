@@ -3,7 +3,7 @@
 .checkbox {
     display: inline-block;
     position: relative;
-    padding-left: 23px;
+    padding-left: 25px;
 
     + .checkbox {
         margin-left: 40px;
@@ -23,7 +23,7 @@
 
     label {
         display: block;
-        color: #696969;
+        color: $base-color;
         font-size: 15px;
         cursor: pointer;
 
@@ -31,11 +31,11 @@
             content: " ";
             display: block;
             position: absolute;
-            top: 2px;
+            top: -1px;
             left: 0;
-            width:  18px;
-            height: 18px;
-            border: 1px solid #a6a6a6;
+            width:  20px;
+            height: 20px;
+            border: 1px solid $border-color;
             background-color: #fff;
         }
 
@@ -43,11 +43,11 @@
             content: " ";
             display: none;
             position: absolute;
-            top: 2px;
+            top: -1px;
             left: 0;
-            width: 17px;
-            height: 17px;
-            background-color: $bold-color;
+            width: 20px;
+            height: 20px;
+            background: url("#{$path}common/btn-check.png") no-repeat;
         }
     }
 }

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-.line-grouping {
+.flex-grouping {
     display: flex;
     width: 100%;
     justify-items: center;
     align-items: center;
 
-    +.line-grouping {
+    +.flex-grouping {
         margin-top: 5px;
     }
 
