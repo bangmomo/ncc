@@ -5,14 +5,18 @@
     background-color: $bg-color;
 
     .inner {
-        padding: 10px;
+        padding: 20px 10px 25px;
         background-color: $bg-white-color;
     }
 
     .page-title {
-        padding-bottom: 10px;
+        margin-bottom: 25px;
+        padding: 0 0 10px 25px;
         border-bottom: 1px solid $point-color1;
-        font-size: 20px;
+        background: url("#{$path}dummy/new-file.png") no-repeat left 2px;
+        background-size: 20px 20px;
+        color: $bold-color;
+        font-size: 16px;
         font-weight: 700;
     }
 }

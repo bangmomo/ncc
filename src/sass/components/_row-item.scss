@@ -7,8 +7,9 @@
 
     .key {
         margin-bottom: 5px;
+        color: $bold-color;
+        font-size: 15px;
         font-weight: 700;
-        font-size: 16px;
     }
 
     &.inline-type {
