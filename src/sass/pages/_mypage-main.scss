@@ -7,39 +7,28 @@
         background: $bg-white-color;
 
         + .section {
-            margin-top: 15px;
+            margin-top: 13px;
         }
     }
 
     .profile-area {
-        padding: 15px 0;
-
-        .profile {
-            overflow: hidden;
-            width: 50px;
-            height: 50px;
-            margin: 0 auto;
-            padding: 6px;
-            border-radius: 50%;
-            background: $bg-color;
-            text-align: center;
-
-            > img {
-                max-width: 100%;
-            }
-        }
+        padding: 12px 0;
 
         .name {
-            margin-top: 3px;
-            font-size: 15px;
+            font-size: 12px;
             text-align: center;
+        }
+
+        .profile-id {
+            color: $bold-color;
+            font-size: 14px;
         }
     }
 
     .my-info {
         @include clearfix;
         
-        padding: 15px 0;
+        padding: 25px 0 20px;
         border-top: 1px solid $border-color;
         
         > div {
@@ -54,12 +43,12 @@
 
         .title {
             padding: 5px 0;
+            font-size: 12px;
         }
 
         .count {
-            margin-bottom: 5px;
-            color: $point-color1;
-            font-size: 25px;
+            color: $bold-color;
+            font-size: 24px;
         }
     }
 
@@ -67,15 +56,15 @@
         padding: 15px 0;
 
         .subject {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            color: $bold-color;
             font-size: 15px;
-            font-weight: 700;
             text-align: center;
         }
 
         .info-list {
             @include clearfix;
-            padding: 0 5px;
+            padding: 0 15px;
 
             li {
                 float: left;
@@ -84,28 +73,27 @@
 
                 &:nth-child(1) {
                     .title {
-                        background-image: url("#{$path}dummy/file.png");
+                        background-image: url("#{$path}mypage/icon-list1.png");
                     }
                 }
 
                 &:nth-child(2) {
                     .title {
-                        background-image: url("#{$path}dummy/package.png");
+                        background-image: url("#{$path}mypage/icon-list2.png");
                     }
                 }
 
                 &:nth-child(3) {
                     .title {
-                        background-image: url("#{$path}dummy/receipt.png");
+                        background-image: url("#{$path}mypage/icon-list3.png");
                     }
                 }
 
                 .title {
-                    padding-top: 80px;
+                    padding-top: 90px;
                     background-repeat: no-repeat;
-                    background-position: 50% 20px;
-                    background-size: 50px 50px;
-                    font-size: 12px;
+                    background-position: 50% 0;
+                    background-size: 76px 76px;
                     letter-spacing: -1px;
                 }
             }
@@ -113,21 +101,20 @@
     }
 
     .manage-list {
-
         li {
-            padding: 10px 15px;
+            padding: 13px 15px;
 
             + li {
                 border-top: 1px solid $border-color;
             }
-        }
 
-        .more {
-            display: block;
+            > a {
+                display: block;
 
-            img {
-                width: 18px;
-                height: 18px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
             }
         }
     }

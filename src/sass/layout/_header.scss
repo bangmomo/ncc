@@ -1,44 +1,45 @@
 @charset "UTF-8";
 
 .header {
+  z-index: 100;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 50px;
   background: linear-gradient(to right, $base-point-color1, $base-point-color2);
-  box-shadow: 1px 8px 15px rgba(165,78,255,0.4);
+  box-shadow: 0 9px 17px rgba(68,57,181,0.3);
 
   .header-close {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 12px 18px;
+    padding: 15px;
 
     img {
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
     }
   }
 
   .header-name {
-    padding: 8px 0;
+    padding: 12px 0;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
   }
 }
 
 .common-header {
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
   height: 50px;
-  z-index: 100;
   background-color: $bg-white-color;
-  border-bottom: 1px solid $base-color;
+  border-bottom: 1px solid #ddd;
   transition: transform 0.4s;
 
   .header-menu {
@@ -48,7 +49,7 @@
     display: block;
     width: 60px;
     height: 50px;
-    padding: 12px 18px;
+    padding: 12px 15px;
 
     .spinner-master {
       position: relative;
@@ -83,7 +84,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: $base-color;
+        background-color: $bg-color;
       }
 
       .diagonal.line-no1 {
@@ -113,19 +114,6 @@
 
     img {
       max-width: 100%;
-    }
-  }
-
-  .header-mypage {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50px;
-    padding: 12px 18px;
-
-    img {
-      width: 28px;
-      height: 28px;
     }
   }
 }

@@ -29,8 +29,8 @@ button {
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    color: #515151;
-    font-size: 13px;
+    color: #909cb1;
+    font-size: 12px;
     line-height: 1.5;
     font-family: $font-square;
     -webkit-text-size-adjust: 100%;
@@ -60,8 +60,8 @@ select,
 input[type="checkbox"] + label,
 input[type="radio"] + label{
     border-radius: 0;
-    color: #666;
-    font: 13px/1.5 $font-square;
+    color: #909cb1;
+    font: 12px/1.5 $font-square;
     vertical-align: middle;
 }
 
