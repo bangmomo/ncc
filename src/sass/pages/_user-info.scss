@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.user-info {
+    background: $bg-color;
+    
+    .section {
+        padding: 30px 15px;
+        background: $bg-white-color;
+
+        + .section {
+            margin-top: 13px;
+        }
+    }
+
+    .profile-id {
+        margin-bottom: 5px;
+        text-align: center;
+
+        > span {
+            color: $bold-color;
+            margin-right: 5px;
+            font-weight: 700;
+        }
+    }
+    
+    .profile-title {
+        color: $bold-color;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .change-pw {
+        display: block;
+        padding-left: 25px;
+        background: url("#{$path}common/icon-login-pw.png") no-repeat left center;
+        background-size: 18px 18px;
+    }
+}
