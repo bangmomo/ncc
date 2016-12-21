@@ -3,55 +3,125 @@
 .main {
     background-color: $bg-color;
     padding: 25px 10px;
-    transition: transform 0.4s;
+
+    .tabs-wrap {
+        position: relative;
+
+        .category-tabs {
+            @include clearfix;
+
+            li {
+                float: left;
+                width: 33.33333333%;
+                padding: 8px 0;
+                text-align: center;
+                
+                &.active {
+                    color: $point-color1;
+                }
+            }
+        }
+
+        .active-bar {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background: linear-gradient(to right, $base-point-color1, $base-point-color2);
+            transition: transform 0.4s, width 0.4s;
+        }
+    }
 
     .item-list {
         @include clearfix;
-        margin: -10px -8px;
+        margin: 12px -8px;
 
         .item {
             float: left;
             width: 50%;
-            padding: 10px 8px;
+            padding: 8px;
 
-            .item-inner {
-                position: relative;
+            > a {
                 display: block;
+                height: 278px;
+                padding: 10px;
+                border-radius: 5px;
                 background-color: $bg-white-color;
-
-                .mark {
-                    position: absolute;
-                    bottom: 10px;
-                    right: 10px;
-                }
-
-                .info {
-                    padding: 10px;
-                }
+                box-shadow: 0 5px 10px rgba(82,106,130,0.3);
 
                 .thumb {
                     position: relative;
                     overflow: hidden;
-                    height: 120px;
+                    height: 150px;
+                    transform: translateZ(0);
 
                     img {
                         position: absolute;
+                        top: 50%;
                         left: 50%;
-                        transform: translateX(-50%);
                         max-width: 100%;
+                        transform: translate(-50%, -50%);
                     }
                 }
 
+                .price-group {
+                    position: relative;
+                }
+
+                .sale-price {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    text-decoration: line-through;
+                }
+                
+                .price {
+                    padding-top: 20px;
+                    color: $bold-color;
+                    font-size: 15px;
+
+                    .sale-per {
+                        margin-right: 10px;
+                    }
+                }
+
+                .item-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    word-wrap:break-word;
+                    height: 38px;
+                }
             }
         }
     }
     
-    .title {
-        @include ellipsis;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        margin-bottom: 10px;
-        color: #000;
+    .new {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        padding: 3px 0;
+        background-color: $base-point-color1;
+        color: #fff;
+        font-size: 11px;
         font-weight: 700;
+        text-align: center;
+    }
+
+    .hot {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        padding: 3px 0;
+        background-color: $base-point-color2;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
     }
 }

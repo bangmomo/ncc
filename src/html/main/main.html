@@ -20,107 +20,98 @@
     <script>
         $(document).ready(function() {
 
+
+            $(document).on("click", ".tabs-wrap .category-tabs li", function(){
+                var width = $(this).find("a").width();
+                var offLeft = $(this).find("a").position().left;
+
+                console.log(offLeft);
+
+                $(this).addClass("active").siblings().removeClass("active");
+                $(this).closest(".category-tabs").siblings(".active-bar").css({
+                    "width" : width,
+                    "transform" : "translateX(" + offLeft + "px)"
+                });
+            });
+
+            $(".tabs-wrap .category-tabs li").eq(0).trigger("click");
         });
     </script>
 
 </head>
 <body>
 
-<!-- gnb컨테이너 -->
-<div class="gnb-container">
-
-</div>
-
-<!-- header -->
-<div class="common-header">
-    <a href="#" class="header-menu">
-        <div class="spinner-master">
-            <div class="spinner diagonal line-no1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal line-no2"></div>
-        </div>
-    </a>
-    <div class="logo"><img src="../../images/common/logo.png" alt=""></div>
-    <a href="#" class="header-mypage"><img src="../../images/common/gnb-myuser.svg" alt=""></a>
-</div>
-
 <!-- Container -->
 <div class="container main">
+    <div class="tabs-wrap">
+        <ul class="category-tabs">
+            <li class="active"><a href="#">CATEGORY</a></li>
+            <li><a href="#">TAKTAKLINK</a></li>
+            <li><a href="#">THEME</a></li>
+        </ul>
+        <span class="active-bar"></span>
+    </div>
+
     <ul class="item-list">
         <li class="item">
-            <div class="item-inner">
+            <a href="#">
                 <div class="thumb">
                     <img src="../../images/dummy/dummy-thumbnail01.jpg" alt="">
                 </div>
-                <div class="mark">
-                    <label>
-                        <input type="checkbox"><span></span>
-                    </label>
-                </div>
                 <div class="info">
-                    <div class="title">아이템제목입니다.아이템제목입니다.</div>
-                    <div class="price">10,000</div>
+                    <div class="price-group">
+                        <div class="sale-price">24,000</div>
+                        <div class="price">
+                            <span class="sale-per">10%</span>21,600
+                        </div>
+                    </div>
+                    <div class="item-name">아이템이름입니다.아이템이름입니다.</div>
+                    <span class="new">N</span>
+                    <span class="hot">H</span>
                 </div>
-            </div>
+            </a>
         </li>
         <li class="item">
-            <div class="item-inner">
+            <a href="#">
                 <div class="thumb">
-                    <img src="../../images/dummy/dummy-thumbnail02.jpg" alt="">
-                </div>
-                <div class="mark">
-                    <label>
-                        <input type="checkbox"><span></span>
-                    </label>
+                    <img src="../../images/dummy/dummy-thumbnail01.jpg" alt="">
                 </div>
                 <div class="info">
-                    <div class="title">아이템제목입니다.</div>
-                    <div class="price">8,000</div>
+                    <div class="price">21,600</div>
+                    <div class="item-name">아이템이름입니다.</div>
                 </div>
-            </div>
+            </a>
         </li>
         <li class="item">
-            <div class="item-inner">
+            <a href="#">
                 <div class="thumb">
-                    <img src="../../images/dummy/dummy-thumbnail03.jpg" alt="">
-                </div>
-                <div class="mark">
-                    <label>
-                        <input type="checkbox"><span></span>
-                    </label>
-                </div>
-                <div class="info"><div class="mark">
-                    <label>
-                        <input type="checkbox"><span></span>
-                    </label>
-                </div>
-                    <div class="title">아이템제목입니다.</div>
-                    <div class="price">11,000</div>
-                </div>
-            </div>
-        </li>
-        <li class="item">
-            <div class="item-inner">
-                <div class="thumb">
-                    <img src="../../images/dummy/dummy-thumbnail04.jpg" alt="">
-                </div>
-                <div class="mark">
-                    <label>
-                        <input type="checkbox"><span></span>
-                    </label>
+                    <img src="../../images/dummy/dummy-thumbnail01.jpg" alt="">
                 </div>
                 <div class="info">
-                    <div class="title">아이템제목입니다.</div>
-                    <div class="price">13,500</div>
+                    <div class="price">21,600</div>
+                    <div class="item-name">아이템이름입니다.</div>
                 </div>
-            </div>
+            </a>
+        </li>
+        <li class="item">
+            <a href="#">
+                <div class="thumb">
+                    <img src="../../images/dummy/dummy-thumbnail01.jpg" alt="">
+                </div>
+                <div class="info">
+                    <div class="price-group">
+                        <div class="sale-price">24,000</div>
+                        <div class="price">
+                            <span class="sale-per">10%</span>21,600
+                        </div>
+                    </div>
+                    <div class="item-name">아이템이름입니다.아이템이름입니다.</div>
+                    <span class="new">N</span>
+                    <span class="hot">H</span>
+                </div>
+            </a>
         </li>
     </ul>
-</div>
-
-<!-- mypage 컨테이너 -->
-<div class="mypage-container">
-
 </div>
 </body>
 </html>
