@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     color: #909cb1;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     font-family: $font-square;
     -webkit-text-size-adjust: 100%;
@@ -61,7 +61,7 @@ input[type="checkbox"] + label,
 input[type="radio"] + label{
     border-radius: 0;
     color: #909cb1;
-    font: 12px/1.5 $font-square;
+    font: 13px/1.5 $font-square;
     vertical-align: middle;
 }
 

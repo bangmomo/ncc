@@ -6,11 +6,13 @@
 }*/
 
 .email-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $bg-white-color;
 }
 
 .email-login-area {
-    @include alignXY;
     width: 100%;
     padding: 20px;
 
