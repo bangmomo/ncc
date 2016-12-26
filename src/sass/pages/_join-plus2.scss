@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.join-plus2 {
+    padding: 65px 10px;
+    background-color: $bg-color;
+
+    .inner {
+        padding: 30px 15px;
+        background-color: $bg-white-color;
+
+        .section {
+            + .section {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .terms-area {
+        .terms {
+            padding: 15px 20px;
+            border: 1px solid $border-color;
+            text-align: center;
+            
+            > span {
+                color: $bold-color;
+            }
+
+            .btn-more {
+                display: block;
+                margin-top: 15px;
+                color: $point-color1;
+            }
+        }
+    }
+}
