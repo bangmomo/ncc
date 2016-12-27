@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.join-plus3 {
+    padding: 65px 10px;
+    background-color: $bg-color;
+
+    .inner {
+        padding: 30px 15px;
+        background-color: $bg-white-color;
+    }
+
+    .flex-grouping:first-child {
+        input {
+            text-align: right;
+        }
+    }
+
+    .select-opt {
+        position: relative;
+
+        .mask {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.7);
+
+            > img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 15px;
+                height: 15px;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        > img {
+            width: 35px;
+            height: 35px;
+            border: 1px solid $border-color;
+        }
+    }
+}
