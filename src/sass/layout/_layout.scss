@@ -5,6 +5,10 @@ body {
     height: 100%;
 }
 
+div[data-role="page"] {
+    height: 100%;
+}
+
 .container {
     min-height: 100%;
     padding-top: 50px;
