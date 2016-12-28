@@ -1,3 +1,30 @@
 @charset "UTF-8";
 
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid $border-color;
+
+    ul {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            flex-basis: auto;
+            width: 25%;
+            text-align: center;
+
+            > a {
+                display: block;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
 
