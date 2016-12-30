@@ -5,7 +5,6 @@
     font-style: normal;
     font-weight: 400;
     src: url("#{$font-path}NanumSquareR.eot"),
-    url("#{$font-path}NanumSquareR.woff2") format('woff2'),
     url("#{$font-path}NanumSquareR.woff") format('woff'),
     url("#{$font-path}NanumSquareR.ttf") format('truetype');
 }
@@ -15,7 +14,6 @@
     font-style: normal;
     font-weight: 700;
     src: url("#{$font-path}NanumSquareB.eot"),
-    url("#{$font-path}NanumSquareB.woff2") format('woff2'),
     url("#{$font-path}NanumSquareB.woff") format('woff'),
     url("#{$font-path}NanumSquareB.ttf") format('truetype');
 }
