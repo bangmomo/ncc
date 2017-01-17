@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+.mypage-delivery {
+    background: $bg-color;
+    padding: 75px 12px 65px;
+
+    .status-list {
+        @include clearfix;
+        margin: 12px -4px 0;
+
+        li {
+            position: relative;
+            float: left;
+            width: 18%;
+
+            + li {
+                margin-left: 7px;
+
+                &::before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: -7px;
+                    width: 7px;
+                    height: 12px;
+                    margin-top: -6px;
+                    background: url("#{$path}common/icon-arrow.png") no-repeat;
+                    background-size: 7px 12px;
+                }
+            }
+
+            &:nth-child(1) {
+                &.active {
+                    .status-title {
+                        color: $point-color1;
+                        font-weight: 700;
+
+                        &::before {
+                            background-position: center bottom;
+                        }
+                    }
+                }
+
+                .status-title {
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 24px;
+                        background: url("#{$path}mypage/icon-status1.png") no-repeat;
+                        background-position: center top;
+                        background-size: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                &.active {
+                    .status-title {
+                        color: $point-color1;
+                        font-weight: 700;
+
+                        &::before {
+                            background-position: center bottom;
+                        }
+                    }
+                }
+
+                .status-title {
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 24px;
+                        background: url("#{$path}mypage/icon-status2.png") no-repeat;
+                        background-position: center top;
+                        background-size: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                &.active {
+                    .status-title {
+                        color: $point-color1;
+                        font-weight: 700;
+
+                        &::before {
+                            background-position: center bottom;
+                        }
+                    }
+                }
+
+                .status-title {
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 24px;
+                        background: url("#{$path}mypage/icon-status3.png") no-repeat;
+                        background-position: center top;
+                        background-size: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                &.active {
+                    .status-title {
+                        color: $point-color1;
+                        font-weight: 700;
+
+                        &::before {
+                            background-position: center bottom;
+                        }
+                    }
+                }
+
+                .status-title {
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 24px;
+                        background: url("#{$path}mypage/icon-status2.png") no-repeat;
+                        background-position: center top;
+                        background-size: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                &.active {
+                    .status-title {
+                        color: $point-color1;
+                        font-weight: 700;
+
+                        &::before {
+                            background-position: center bottom;
+                        }
+                    }
+                }
+
+                .status-title {
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 24px;
+                        background: url("#{$path}mypage/icon-status4.png") no-repeat;
+                        background-position: center top;
+                        background-size: 50px;
+                    }
+                }
+            }
+
+            .status-title {
+                position: relative;
+                padding-top: 30px;
+                font-size: 11px;
+                text-align: center;
+            }
+        }
+    }
+
+    .section {
+        margin-top: 20px;
+        padding: 24px 12px;
+        border-radius: 5px;
+        background: $bg-white-color;
+
+        .subject {
+            padding-bottom: 20px;
+            color: $bold-color;
+            font-weight: 700;
+        }
+
+        .section-group {
+            padding: 20px 0;
+            border-top: 1px solid $border-color;
+
+            .group-title {
+                color: $bold-color;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .row-item {
+                + .row-item {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-close"><img src="../../images/common/icon-cancel.svg" alt=""></a>
+    <div class="header-name">배송추적</div>
+</div>
+
+<div class="container mypage-delivery">
+    <div class="row-item">
+        <div class="key">배송 상태</div>
+        <div class="value">
+            <ol class="status-list">
+                <!-- 해당 li에 active 클래스로 활성화 -->
+                <li class="active">
+                    <div class="status-title">잡화완료</div>
+                </li>
+                <li>
+                    <div class="status-title">상품이동</div>
+                </li>
+                <li>
+                    <div class="status-title">배송지도착</div>
+                </li>
+                <li>
+                    <div class="status-title">배송출발</div>
+                </li>
+                <li>
+                    <div class="status-title">배송완료</div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="subject">제품명을 입력해주세요</div>
+        <div class="section-group">
+            <div class="group-title">배송지 정보</div>
+            <div class="row-item inline-type">
+                <div class="key">받는분</div>
+                <div class="value">김소연</div>
+            </div>
+            <div class="row-item inline-type">
+                <div class="key">택배사</div>
+                <div class="value">CJ대한통운(1588-1255)</div>
+            </div>
+            <div class="row-item inline-type">
+                <div class="key">운송장 번호</div>
+                <div class="value">2900394029</div>
+            </div>
+        </div>
+        <div class="section-group">
+            <div class="group-title">배송상세정보</div>
+            <div class="table">
+                <table>
+                    <colgroup>
+                        <col style="width: 35%;">
+                        <col style="width: 25%;">
+                        <col style="width: 40%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>처리일시</th>
+                        <th>단계</th>
+                        <th>상태 및 위치</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            2017.01.17<br>
+                            <span class="time">18:10</span>
+                        </td>
+                        <td>집화완료</td>
+                        <td>
+                            잡화처리<br>
+                            <span class="charge">직영(정순식)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2017.01.17<br>
+                            <span class="time">18:10</span>
+                        </td>
+                        <td>집화완료</td>
+                        <td>
+                            잡화처리<br>
+                            <span class="charge">직영(정순식)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2017.01.17<br>
+                            <span class="time">18:10</span>
+                        </td>
+                        <td>집화완료</td>
+                        <td>
+                            잡화처리<br>
+                            <span class="charge">직영(정순식)</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

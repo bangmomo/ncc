@@ -4,11 +4,11 @@
     background: $bg-color;
     
     .section {
-        padding: 30px 15px;
+        padding: 24px 25px;
         background: $bg-white-color;
 
         + .section {
-            margin-top: 13px;
+            margin-top: 12px;
         }
     }
 
@@ -24,8 +24,6 @@
     }
     
     .profile-title {
-        color: $bold-color;
-        font-size: 15px;
         font-weight: 700;
         text-align: center;
     }

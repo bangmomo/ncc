@@ -7,12 +7,12 @@
         background: $bg-white-color;
 
         + .section {
-            margin-top: 13px;
+            margin-top: 12px;
         }
     }
 
     .profile-area {
-        padding: 15px 0 12px;
+        padding: 15px 0;
         text-align: center;
 
         .name {
@@ -22,14 +22,14 @@
 
         .profile-id {
             color: $bold-color;
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 
     .my-info {
         @include clearfix;
         
-        padding: 25px 0 20px;
+        padding: 10px 0;
         border-top: 1px solid $border-color;
         
         > div {
@@ -44,20 +44,20 @@
 
         .title {
             padding: 5px 0;
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .count {
             color: $bold-color;
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 
     .shopping-info {
-        padding: 15px 0;
+        padding: 20px 0 15px;
 
         .subject {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             color: $bold-color;
             font-size: 15px;
             text-align: center;
@@ -65,7 +65,7 @@
 
         .info-list {
             @include clearfix;
-            padding: 0 15px;
+            padding: 0 12px;
 
             li {
                 float: left;
@@ -91,11 +91,11 @@
                 }
 
                 .title {
-                    padding-top: 90px;
+                    padding-top: 75px;
                     background-repeat: no-repeat;
                     background-position: 50% 0;
-                    background-size: 76px 76px;
-                    letter-spacing: -1px;
+                    background-size: 65px 65px;
+                    font-size: 11px;
                 }
             }
         }
@@ -103,7 +103,7 @@
 
     .manage-list {
         li {
-            padding: 13px 15px;
+            padding: 15px 12px;
 
             + li {
                 border-top: 1px solid $border-color;
@@ -113,8 +113,8 @@
                 display: block;
 
                 img {
-                    width: 18px;
-                    height: 18px;
+                    width: 12px;
+                    height: 12px;
                 }
             }
         }

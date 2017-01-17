@@ -29,7 +29,7 @@ button {
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    color: #909cb1;
+    color: #666;
     font-size: 13px;
     line-height: 1.5;
     font-family: $font-square;
@@ -60,7 +60,7 @@ select,
 input[type="checkbox"] + label,
 input[type="radio"] + label{
     border-radius: 0;
-    color: #909cb1;
+    color: #666;
     font: 13px/1.5 $font-square;
     vertical-align: middle;
 }
