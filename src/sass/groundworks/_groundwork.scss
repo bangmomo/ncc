@@ -54,7 +54,6 @@ a {
 
 /* FORM */
 input[type="text"],
-input[type="password"],
 textarea,
 select,
 input[type="checkbox"] + label,
@@ -62,6 +61,12 @@ input[type="radio"] + label{
     border-radius: 0;
     color: #666;
     font: 13px/1.5 $font-square;
+    vertical-align: middle;
+}
+input[type="password"] {
+    border-radius: 0;
+    color: #909cb1;
+    font: 13px/1.5 $font-pw;
     vertical-align: middle;
 }
 
