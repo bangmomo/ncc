@@ -1,28 +1,26 @@
 @charset "UTF-8";
 
-/*.login {
-    background: url(#{$path}common/login-bg.jpg) no-repeat;
-    background-size: cover;
-}*/
-
 .email-login {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    background-color: $bg-white-color;
+    background: url("#{$path}common/login-bg.png") no-repeat;
+    background-size: cover;
+    color: $white-color;
 }
 
 .email-login-area {
     width: 100%;
     padding: 20px;
+    text-align: center;
 
     .logo {
-        width: 305px;
-        margin: 0 auto 30px;
+        margin: 30px 0 40px;
 
         img {
-            max-width: 100%;
+            width: 147px;
+            height: 207px;
         }
     }
 
@@ -34,8 +32,8 @@
     }
 
     .login-util {
-        margin-top: 20px;
-        color: #888;
+        margin-top: 15px;
+        color: $white-color;
         text-align: center;
 
         .pw-find {
@@ -50,6 +48,25 @@
                 left: 5px;
                 color: #888;
             }
+        }
+    }
+    
+    .checkbox {
+        label {
+            color: $white-color;
+        }
+    }
+    
+    input {
+        color: $white-color;
+    }
+    
+    select {
+        color: $white-color;
+        
+        option {
+            background: transparent;
+            color: $base-color;
         }
     }
 }

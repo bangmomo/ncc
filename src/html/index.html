@@ -105,9 +105,11 @@
         .list .section .item { border-bottom: 1px solid #ccc; }
         .list .section .item a { display: table; width: 100%; cursor: default; }
         .list .section .item.done a { cursor: pointer; }
+        .list .section .item.end a { cursor: pointer; }
         .list .section .item a:hover { background-color: rgba(255,255,255,0.8); }
         .list .section .item a > div { display: table-cell; padding: 10px; }
 
+        .list .section .item.end a:hover,
         .list .section .item.done a:hover,
         .list .section .item.test a:hover,
         .list .section .item.ing  a:hover { background-color: rgba(0,0,0,0.2); }
@@ -116,9 +118,11 @@
         .list .section .item.ing  { background-color: #c25500; border-bottom: 1px solid #9d4500; }
         .list .section .item.test { background-color: #d8b500; border-bottom: 1px solid #a68b00; }
         .list .section .item.done { background-color: #52a485; border-bottom: 1px solid #3c7977; }
+        .list .section .item.end { background-color: #8957b8; border-bottom: 1px solid #533173; }
         .list .section .item.ing  a > div,
         .list .section .item.test a > div,
-        .list .section .item.done a > div { color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.8); }
+        .list .section .item.done a > div,
+        .list .section .item.end a > div{ color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.8); }
 
         .footer { padding-bottom: 20px; }
         .footer p { text-align: center; }
@@ -252,7 +256,7 @@
 
             <div class="section" id="section1">
                 <h2>PAGE</h2>
-                <div class="item">
+                <div class="item end">
                     <a href="login/login.html" target="_blank">
                         <div class="depth1">PAGE</div>
                         <div class="depth2 this">LOGIN(로그인)</div>
@@ -261,7 +265,7 @@
                         <div class="tab5"></div>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item end">
                     <a href="login/email-login.html" target="_blank">
                         <div class="depth1">PAGE</div>
                         <div class="depth2 this">EMAIL-LOGIN(이메일로그인)</div>
@@ -270,7 +274,7 @@
                         <div class="tab5"></div>
                     </a>
                 </div>
-                <div class="item done">
+                <div class="item end">
                     <a href="login/join.html" target="_blank">
                         <div class="depth1">PAGE</div>
                         <div class="depth2 this">Join(등록하기)</div>
@@ -279,7 +283,7 @@
                         <div class="tab5"></div>
                     </a>
                 </div>
-                <div class="item done">
+                <div class="item end">
                     <a href="login/join-plus3.html" target="_blank">
                         <div class="depth1">PAGE</div>
                         <div class="depth2 this">Join-plus(추가정보입력_회원정보)</div>

@@ -14,8 +14,10 @@ $(".tab .nav a").on("click", function(e) {
 $(document).on("change", ".select select", function() {
     var dir = $(this).find("option:selected").val();
     if (dir == "direct") {
+        $(this).find("option.dir").text("");
         $(this).closest(".select").addClass("active").find(".dir-input input").focus();
     } else {
         $(this).closest(".select").removeClass("active").find(".dir-input input").val("");
+        $(this).find("option.dir").text("직접입력");
     }
 });

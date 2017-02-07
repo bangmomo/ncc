@@ -12,7 +12,28 @@
 
     .row-item.inline-type {
         .key {
-            width: 33px;
+            width: 55px;
+        }
+    }
+
+    .terms-area {
+        margin: 20px 0;
+
+        .terms {
+            padding: 15px 20px;
+            border: 1px solid $border-color;
+            background-color: #fff;
+            text-align: center;
+
+            > span {
+                color: $bold-color;
+            }
+
+            .btn-more {
+                display: block;
+                margin-top: 15px;
+                color: $point-color1;
+            }
         }
     }
 
