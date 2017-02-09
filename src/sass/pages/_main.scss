@@ -2,22 +2,22 @@
 
 .main {
     background-color: $bg-color;
-    padding: 25px 10px;
 
     .tabs-wrap {
         position: relative;
+        background-color: $white-color;
 
         .category-tabs {
-            @include clearfix;
+            display: flex;
+            justify-content: center;
 
             li {
-                float: left;
-                width: 33.33333333%;
-                padding: 8px 0;
+                padding: 12px 18px;
                 text-align: center;
                 
                 &.active {
-                    color: $point-color1;
+                    color: $bold-color;
+                    font-weight: 700;
                 }
             }
         }
@@ -28,100 +28,151 @@
             left: 0;
             bottom: 0;
             height: 2px;
-            background: linear-gradient(to right, $base-point-color1, $base-point-color2);
+            background: $base-point-color1;
             transition: transform 0.4s, width 0.4s;
         }
     }
 
-    .item-list {
-        @include clearfix;
-        margin: 12px -8px;
+    .search-area {
+        position: relative;
+        top: -43px;
 
-        .item {
-            float: left;
-            width: 50%;
-            padding: 8px;
+        &.active {
+            .search-form {
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+            }
+        }
+
+        .search-trigger {
+            position: absolute;
+            top: 0;
+            right: 23px;
 
             > a {
                 display: block;
-                height: 278px;
-                padding: 10px;
-                border-radius: 5px;
-                background-color: $bg-white-color;
-                box-shadow: 5px 7px 10px rgba(100,117,201,0.2);
+                width: 43px;
+                height: 43px;
+                padding: 10px 0;
+                text-align: center;
 
-                .thumb {
-                    position: relative;
-                    overflow: hidden;
-                    height: 150px;
-                    transform: translateZ(0);
+                > img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .search-form {
+            z-index: 10;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: -43px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: opacity 0.2s, visibility 0.2s, top 0.5s;
+
+            .inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 23px;
+                background-color: $white-color;
+
+                .btn-back {
+                    width: 43px;
+                    height: 43px;
+                    padding: 10px 0;
+                    text-align: center;
 
                     img {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        max-width: 100%;
-                        transform: translate(-50%, -50%);
+                        width: 20px;
+                        height: 20px;
                     }
                 }
 
-                .price-group {
-                    position: relative;
-                }
+                .input-area {
+                    flex: 1;
 
-                .sale-price {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    text-decoration: line-through;
-                }
-                
-                .price {
-                    padding-top: 20px;
-                    color: $bold-color;
-                    font-size: 15px;
-
-                    .sale-per {
-                        margin-right: 10px;
+                    input {
+                        width: 100%;
+                        padding: 10px;
+                        border: 0;
+                        font-size: 15px;
                     }
                 }
 
-                .item-name {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    word-wrap:break-word;
-                    height: 38px;
+                .btn-go {
+                    width: 43px;
+                    height: 43px;
+                    padding: 10px 0;
+                    text-align: center;
+
+                    > img {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         }
     }
-    
-    .new {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-top: 5px;
-        padding: 3px 0;
-        background-color: $base-point-color1;
-        color: #fff;
-        font-size: 11px;
-        font-weight: 700;
-        text-align: center;
-    }
 
-    .hot {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-top: 5px;
-        padding: 3px 0;
-        background-color: $base-point-color2;
-        color: #fff;
-        font-size: 11px;
-        font-weight: 700;
-        text-align: center;
+    .item-list {
+        padding: 12px;
+
+        .item {
+            display: flex;
+            width: 100%;
+            height: 116px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: $white-color;
+
+            .thumb {
+                width: 115px;
+                height: 100%;
+
+                > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .info {
+                flex: 1;
+                margin-left: 20px;
+
+               .item-name {
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   display: -webkit-box;
+                   -webkit-line-clamp: 2;
+                   -webkit-box-orient: vertical;
+                   word-wrap:break-word;
+                   height: 38px;
+                   margin-bottom: 15px;
+               }
+
+                .price-group {
+                    .sale-price {
+                        font-size: 11px;
+                        text-decoration: line-through;
+                    }
+                    
+                    .price {
+                        font-size: 15px;
+                        color: $bold-color;
+
+                        .sale-per {
+                            margin-right: 5px;
+                            color: $point-color2;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
