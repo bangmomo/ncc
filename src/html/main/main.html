@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/pages.css">
 
     <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
     <script src="../../js/lib/slick.min.js"></script>
     <script src="../../js/component.js"></script>
     <script src="../../js/layout.js"></script>
@@ -19,8 +20,6 @@
 
     <script>
         $(document).ready(function() {
-
-
             $(document).on("click", ".tabs-wrap .category-tabs li", function(){
                 var width = $(this).find("a").width();
                 var offLeft = $(this).find("a").position().left;
@@ -34,17 +33,18 @@
                 });
             });
 
-            $(".tabs-wrap .category-tabs li").eq(0).trigger("click");
-
-
+            /* 공유버튼 */
             $('.share-btn').on('click', function(e) {
                 $(this).parent().addClass('active');
                 e.preventDefault();
             });
+
             $('.share-close').on('click', function(e) {
                 $(this).closest('.share-trigger').removeClass('active');
                 e.preventDefault();
             });
+
+            $(".tabs-wrap .category-tabs li").eq(0).trigger("click");
         });
     </script>
 

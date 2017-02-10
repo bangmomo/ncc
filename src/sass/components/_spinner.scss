@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.spinner {
+    .ui-spinner {
+        position: relative;
+        display: flex;
+        border: 0;
+
+        .ui-spinner-button {
+            border: 0;
+        }
+
+        .ui-spinner-down {
+            order: 1;
+            display: inline-block;
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #666;
+            border-radius: 50%;
+            background-color: #fff;
+            vertical-align: middle;
+
+            &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10px;
+                height: 2px;
+                background-color: #666;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .ui-spinner-up {
+            order: 3;
+            display: inline-block;
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #666;
+            border-radius: 50%;
+            background-color: #666;
+            vertical-align: middle;
+
+            &:before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2px;
+                height: 10px;
+                background-color: #fff;
+                transform: translate(-50%, -50%);
+            }
+
+            &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10px;
+                height: 2px;
+                background-color: #fff;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .ui-spinner-input {
+            order: 2;
+            width: 40px;
+            height: 25px;
+            margin: 0;
+            padding: 0 5px;
+            border: 0;
+            text-align: center;
+            outline: 0;
+            background-color: #fff;
+            color: #666;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    label {
+        display: none;
+    }
+}
+
+

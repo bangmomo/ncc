@@ -4,6 +4,16 @@ $(".accordion .item-head a").on("click", function(e) {
     e.preventDefault();
 });
 
+/* 스피너 spinner */
+$("#spin").spinner({
+    min: 0
+});
+
+/* 찜하기 하트 */
+$(document).on("click", ".like", function() {
+    $(this).toggleClass("active");
+});
+
 /* 탭 클릭시 */
 $(".tab .nav a").on("click", function(e) {
     $(this).parent().addClass("active").siblings().removeClass("active");

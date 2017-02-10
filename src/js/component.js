@@ -5,6 +5,16 @@ $('.accordion .item-head a').on('click', function(e) {
     e.preventDefault();
 });
 
+/* 스피너 spinner */
+$("#spin").spinner({
+    min: 0
+});
+
+/* 찜하기 하트 */
+$(document).on("click", ".like", function(){
+    $(this).toggleClass("active");
+});
+
 /* 탭 클릭시 */
 $('.tab .nav a').on('click', function(e) {
     $(this).parent().addClass('active').siblings().removeClass('active');
@@ -16,10 +26,16 @@ $('.tab .nav a').on('click', function(e) {
 $(document).on("click", ".search-area .search-trigger", function() {
     $(this).closest(".search-area").addClass("active");
 });
+
 /* 상품검색 Close */
 $(document).on("click", ".search-area .btn-back", function() {
     $(this).closest(".search-area").removeClass("active");
 });
+
+
+
+
+
 
 /* 셀렉트박스 직접입력 시 */
 /*$(document).on("change", ".select select", function() {

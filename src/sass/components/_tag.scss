@@ -13,4 +13,44 @@
     text-align: left;
 }
 
+.like {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 18px;
+    background: url("#{$path}common/icon-like-off.png") no-repeat;
+    background-size: 20px 18px;
+
+    &.active {
+        background: url("#{$path}common/icon-like-on.png") no-repeat;
+        background-size: 20px 18px;
+    }
+}
+
+.review-wrap {
+    .review {
+        position: relative;
+        display: inline-block;
+        height: 25px;
+        width: 100px;
+        padding: 0;
+        color: #999;
+        font-size: 18px;
+
+        .review-count {
+            z-index: 10;
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            padding: 0;
+            top: 0;
+            left: 0;
+            color: #999;
+            white-space: nowrap;
+        }
+    }
+}
+
 
