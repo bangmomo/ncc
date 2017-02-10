@@ -35,6 +35,16 @@
             });
 
             $(".tabs-wrap .category-tabs li").eq(0).trigger("click");
+
+
+            $('.share-btn').on('click', function(e) {
+                $(this).parent().addClass('active');
+                e.preventDefault();
+            });
+            $('.share-close').on('click', function(e) {
+                $(this).closest('.share-trigger').removeClass('active');
+                e.preventDefault();
+            });
         });
     </script>
 
@@ -75,14 +85,162 @@
     <ul class="item-list">
         <li class="item">
             <div class="thumb">
-                <img src="../../images/dummy/dummy-thumbnail01.jpg" alt="">
+                <img src="../../images/dummy/item-img01.png" alt="">
             </div>
             <div class="info">
-                <div class="item-name">제품명을 입력주세요. 최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
                 <div class="price-group">
                     <div class="sale-price">24,000</div>
                     <div class="price">
                         <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumb">
+                <img src="../../images/dummy/item-img02.png" alt="">
+            </div>
+            <div class="info">
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="price-group">
+                    <div class="sale-price">24,000</div>
+                    <div class="price">
+                        <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumb">
+                <img src="../../images/dummy/item-img03.png" alt="">
+            </div>
+            <div class="info">
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="price-group">
+                    <div class="sale-price">24,000</div>
+                    <div class="price">
+                        <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumb">
+                <img src="../../images/dummy/item-img01.png" alt="">
+            </div>
+            <div class="info">
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="price-group">
+                    <div class="sale-price">24,000</div>
+                    <div class="price">
+                        <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumb">
+                <img src="../../images/dummy/item-img02.png" alt="">
+            </div>
+            <div class="info">
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="price-group">
+                    <div class="sale-price">24,000</div>
+                    <div class="price">
+                        <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="thumb">
+                <img src="../../images/dummy/item-img03.png" alt="">
+            </div>
+            <div class="info">
+                <div class="item-name">제품명을 입력주세요.최대 2줄까지 보여집니다.제품명을 입력주세요. 최대 2줄까지 보여집니다.</div>
+                <div class="price-group">
+                    <div class="sale-price">24,000</div>
+                    <div class="price">
+                        <span class="sale-per">10%</span>21,600
+                    </div>
+                </div>
+                <div class="share-group">
+                    <div class="share-trigger">
+                        <div class="share-btn"><img src="../../images/common/icon-share.png" alt=""></div>
+                        <div class="social-wrap">
+                            <div class="social-btn">
+                                <a href="#" class="kakao"><img src="../../images/common/share-kakao.png" alt=""></a>
+                                <a href="#" class="sms"><img src="../../images/common/share-sms.png" alt=""></a>
+                                <a href="#" class="line"><img src="../../images/common/share-line.png" alt=""></a>
+                            </div>
+                            <a href="#" class="share-close"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
