@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>title</title>
 
-    <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/pages.css">
 
     <script src="../../js/lib/jquery-3.1.1.min.js"></script>
@@ -20,7 +20,10 @@
 
     <script>
         $(document).ready(function() {
-
+            /* 스피너 spinner */
+            $(".spinner .spin").spinner({
+                min: 0
+            });
         });
     </script>
 
@@ -67,10 +70,34 @@
 </div>
 
 <!-- 고정옵션버튼 -->
-<div class="fix-option">
-    <div class="fix-wrap">
-        <div class="buy">구매하기</div>
-        <div class="share"><img src="../../images/common/icon-share.png" alt=""></div>
+<div class="buy-option">
+    <div class="buy-inner">
+        <a href="#" class="buy">구매하기</a>
+        <div class="share">
+            <div class="trigger"><img src="../../images/common/icon-share.png" alt=""></div>
+            <div class="share-opt">
+                <a href="#"><img src="../../images/common/share-kakao.png" alt=""></a>
+                <a href="#"><img src="../../images/common/share-sms.png" alt=""></a>
+                <a href="#"><img src="../../images/common/share-line.png" alt=""></a>
+                <div class="close"><img src="../../images/common/icon-cancel.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="basket-inner">
+        <a href="#" class="basket">장바구니</a>
+        <a href="#" class="buy">구매하기</a>
+        <div class="util">
+            <div class="inner">
+                <div class="basket-close"><img src="../../images/common/icon-cancel.png" alt=""></div>
+                <div class="name">마이수야 연말 SALE! 1+1 이벤트중</div>
+                <div class="price">25,000</div>
+                <div class="spinner">
+                    <label for="spin1">Select a value:</label>
+                    <input id="spin1" class="spin" value="1">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

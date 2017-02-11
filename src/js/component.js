@@ -6,7 +6,7 @@ $('.accordion .item-head a').on('click', function(e) {
 });
 
 /* 스피너 spinner */
-$("#spin").spinner({
+$(".spinner .spin").spinner({
     min: 0
 });
 
@@ -32,7 +32,26 @@ $(document).on("click", ".search-area .btn-back", function() {
     $(this).closest(".search-area").removeClass("active");
 });
 
+/* 고정옵션버튼(구매하기 쉐어버튼) */
+$(document).on("click", ".buy-option .buy-inner .trigger", function() {
+    $(this).closest(".buy-inner").addClass("active");
+});
+$(document).on("click", ".buy-option .buy-inner .close", function() {
+    $(this).closest(".buy-inner").removeClass("active");
+});
 
+/* 고정옵션버튼(구매하기 클릭시) */
+$(document).on("click", ".buy-option .buy-inner .buy", function() {
+    $(this).closest(".buy-option").addClass("active");
+    setTimeout(function() {
+        $(".basket-inner").addClass("active");
+    }, 50);
+
+});
+$(document).on("click", ".buy-option .basket-inner .basket-close", function() {
+    $(this).closest(".buy-option").find(".basket-inner").removeClass("active");
+    $(this).closest(".buy-option").removeClass("active");
+});
 
 
 
