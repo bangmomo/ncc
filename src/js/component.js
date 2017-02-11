@@ -10,6 +10,9 @@ $(".spinner .spin").spinner({
     min: 0
 });
 
+/* 스크롤 최상단 이동 */
+
+
 /* 찜하기 하트 */
 $(document).on("click", ".like", function(){
     $(this).toggleClass("active");
