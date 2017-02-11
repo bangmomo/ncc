@@ -11,7 +11,11 @@ $(".spinner .spin").spinner({
 });
 
 /* 스크롤 최상단 이동 */
-
+$(document).on("scroll", function() {
+    $(".btn-scroll").click(function() {
+        $(".container").animate({scrollTop : 0}, 1000);
+    });
+});
 
 /* 찜하기 하트 */
 $(document).on("click", ".like", function(){
