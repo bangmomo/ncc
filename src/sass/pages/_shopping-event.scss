@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.shopping-event {
+    padding: 65px 10px;
+    background-color: $bg-color;
+
+    .event-list {
+        li {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .slick-dots {
+        margin-top: 10px;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            
+            &.slick-active {
+                button {
+                    background-color: $point-color1;
+                }
+            }
+            
+            button {
+                overflow: hidden;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #999;
+                text-indent: -9999px;
+            }
+        }
+    }
+}
