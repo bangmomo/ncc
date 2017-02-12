@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-close"><img src="../../images/common/icon-cancel.svg" alt=""></a>
+    <div class="header-name">장바구니</div>
+</div>
+
+<div class="container shopping-basket">
+    <!-- 장바구니 상품 없을시 -->
+    <div class="no-item">
+        <img src="../../images/common/no-item.png" alt="">
+    </div>
+
+    <!-- 장바구니 상품 있을 시 -->
+    <div class="hav-item">
+        <div class="util">
+            <div class="aligner">
+                <div class="left">
+                    <div class="checkbox">
+                        <input type="checkbox" id="chk-all" checked="checked">
+                        <label for="chk-all">전체선택</label>
+                    </div>
+                    <span>(2/2)</span>
+                </div>
+                <div class="right">
+                    <a href="#" class="del-all"><img src="../../images/common/icon-delete.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <ul class="basket-list">
+            <li>
+                <div class="opt-area">
+                    <div class="checkbox">
+                        <input type="checkbox" id="c1-1" checked="checked">
+                        <label for="c1-1"></label>
+                    </div>
+                    <a href="#" class="del"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                </div>
+                <div class="thumb-area">
+                    <div class="info">
+                        <div class="company">마임건강식품</div>
+                        <div class="title">홍삼에 칼슘이, 홍삼키본</div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="../../images/dummy/item-img03.png" alt="">
+                    </div>
+                </div>
+                <div class="info-area">
+                    <div class="info">
+                        <div class="key">상품명</div>
+                        <div class="value">
+                            <div class="title">홍삼키본</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">구매수량</div>
+                        <div class="value">
+                            <div class="num">2개</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">상품금액</div>
+                        <div class="value">
+                            <div class="pay">25,000원</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">배송비</div>
+                        <div class="value">
+                            <div class="delivery">0원</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">주문금액</div>
+                        <div class="value">
+                            <div class="total-pay">50,000원</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="opt-area">
+                    <div class="checkbox">
+                        <input type="checkbox" id="c1-2" checked="checked">
+                        <label for="c1-2"></label>
+                    </div>
+                    <a href="#" class="del"><img src="../../images/common/icon-cancel.png" alt=""></a>
+                </div>
+                <div class="thumb-area">
+                    <div class="info">
+                        <div class="company">마임건강식품</div>
+                        <div class="title">홍삼에 칼슘이, 홍삼키본</div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="../../images/dummy/item-img03.png" alt="">
+                    </div>
+                </div>
+                <div class="info-area">
+                    <div class="info">
+                        <div class="key">상품명</div>
+                        <div class="value">
+                            <div class="title">홍삼키본</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">구매수량</div>
+                        <div class="value">
+                            <div class="num">2개</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">상품금액</div>
+                        <div class="value">
+                            <div class="pay">25,000원</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">배송비</div>
+                        <div class="value">
+                            <div class="delivery">0원</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="key">주문금액</div>
+                        <div class="value">
+                            <div class="total-pay">50,000원</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="total-area">
+            <div class="aligner">
+                <div class="left">상품금액</div>
+                <div class="right">75,000원</div>
+            </div>
+            <div class="aligner" data-top="xs">
+                <div class="left">배송비</div>
+                <div class="right">0원</div>
+            </div>
+            <div class="total">
+                <div class="aligner">
+                    <div class="left">결제예정금액</div>
+                    <div class="right">
+                        <span class="point-color1">75,000</span>원
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+            <div><a href="#" class="btn expanded fat white">쇼핑계속하기</a></div>
+            <div><a href="#" class="btn expanded fat">구매하기</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
