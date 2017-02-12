@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.approval-fin {
+    padding: 65px 10px;
+    background-color: $bg-color;
+    
+    .inner {
+        padding: 20px 13px;
+        border-radius: 5px;
+        background-color: $bg-white-color;
+        box-shadow: 5px 7px 10px rgba(213,213,213,0.4);
+    }
+    
+    .fin-msg {
+        padding: 0 0 20px;
+        border-bottom: 1px solid $border-color;
+
+        .point-color2 {
+            margin-left: 4px;
+        }
+    }
+
+    .section {
+        padding: 20px 0;
+
+        + .section {
+            border-top: 1px solid $border-color;
+        }
+    }
+
+    .row-item {
+        + .row-item {
+            margin-top: 10px;
+        }
+
+        &.inline-type {
+            .key {
+                width: 60px;
+            }
+        }
+    }
+    
+    .aligner {
+        .right {
+            color: $bold-color;
+            font-weight: 700;
+        }
+    }
+}

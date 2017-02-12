@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.approval {
+    padding: 65px 20px;
+    background-color: $bg-white-color;
+
+    .page-title {
+        margin-bottom: 25px;
+        padding: 0 0 10px 25px;
+        border-bottom: 1px solid $point-color1;
+        background: url("#{$path}dummy/new-file.png") no-repeat left 2px;
+        background-size: 20px 20px;
+        color: $bold-color;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .appr-opt {
+        @include clearfix;
+        margin: 0 -5px;
+
+        > div {
+            float: left;
+            width: 50%;
+            padding: 0 5px;
+
+            a {
+                padding: 12px 10px;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}

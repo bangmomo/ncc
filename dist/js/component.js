@@ -1,32 +1,21 @@
-/* 아코디언 목록 클릭시 */
-$(".accordion .item-head a").on("click", function(e) {
-    $(this).closest("li").toggleClass("active").siblings().removeClass("active");
-    e.preventDefault();
-});
-
-/* 스피너 spinner */
-$(".spinner .spin").spinner({
-    min: 0
+$(document).ready(function() {
+    /* 스피너 spinner */
+    $(".spinner .spin").spinner({
+        min: 0
+    });
 });
 
 /* 스크롤 최상단 이동 */
-$(document).on("scroll", function() {
-    $(".btn-scroll").click(function() {
-        $(".container").animate({
-            scrollTop: 0
-        }, 1e3);
-    });
+$(document).on("click", ".btn-scroll", function(e) {
+    $("body").animate({
+        scrollTop: 0
+    }, 1e3);
+    e.preventDefault();
 });
 
 /* 찜하기 하트 */
 $(document).on("click", ".like", function() {
     $(this).toggleClass("active");
-});
-
-/* 탭 클릭시 */
-$(".tab .nav a").on("click", function(e) {
-    $(this).parent().addClass("active").siblings().removeClass("active");
-    e.preventDefault();
 });
 
 /* 상품검색버튼 클릭시 */

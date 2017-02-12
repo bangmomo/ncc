@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-close"><img src="../../images/common/icon-cancel.svg" alt=""></a>
+    <div class="header-name">구매하기</div>
+</div>
+
+<div class="container approval">
+    <div class="section">
+        <div class="row-item">
+            <div class="key">배송지명</div>
+            <div class="value">
+                <div class="select">
+                    <select>
+                        <option value="">배송지 선택</option>
+                        <option value="">배송지 선택</option>
+                        <option value="">배송지 선택</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">주소</div>
+            <div class="value">
+                <div class="address">
+                    <div class="zip-code">
+                        <div class="input expanded">
+                            <input type="text" readonly>
+                        </div>
+                        <a href="#" class="btn white">우편번호 검색</a>
+                    </div>
+                    <div class="input expanded">
+                        <input type="text" readonly>
+                    </div>
+                    <div class="input expanded">
+                        <input type="text" placeholder="상세주소를 입력해주세요">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">연락처</div>
+            <div class="value">
+                <div class="phone">
+                    <div class="input expanded">
+                        <input type="text">
+                    </div>
+                    <span class="dash">-</span>
+                    <div class="input expanded">
+                        <input type="text">
+                    </div>
+                    <span class="dash">-</span>
+                    <div class="input expanded">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aligner" data-top="sm">
+            <div class="right">
+                <div class="checkbox">
+                    <input type="checkbox" id="c1" checked="checked">
+                    <label for="c1">기본으로 설정</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-item" data-top="md">
+        <div class="key">구매수단</div>
+        <div class="value" data-top="sm">
+            <div class="appr-opt">
+                <div><a href="#" class="btn expanded fat white">신용카드</a></div>
+                <div><a href="#" class="btn expanded fat white">무통장입금</a></div>
+            </div>
+            <a href="#" class="btn expanded fat" data-top="xs">결재하기</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

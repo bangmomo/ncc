@@ -9,6 +9,13 @@
         max-width: none;
     }
 
+    &.white {
+        select {
+            background: transparent url("#{$path}common/selectbox-arrow-w.png") no-repeat right 103%;
+            background-size: 44px 44px;
+        }
+    }
+
     label {
         @include hidden;
     }
