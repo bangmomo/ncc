@@ -85,6 +85,10 @@
             color: #666;
             font-size: 18px;
             font-weight: 700;
+
+            + div {
+                order: 3;
+            }
         }
     }
 
