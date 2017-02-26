@@ -16,6 +16,20 @@
     <script src="../../js/lib/slick.min.js"></script>
     <script src="../../js/component.js"></script>
     <script src="../../js/layout.js"></script>
+    <script>
+        $(document).ready(function () {
+            /* 중복체크 여부 */
+            $(".flex-grouping .auto").on("click",function () {
+                var $radioType = $(this).parent();
+                if($radioType.hasClass("radio-type")) {
+                    $(this).siblings().find(".select-opt").removeClass("active");
+                    $(this).find(".select-opt").toggleClass("active");
+                } else {
+                    $(this).find(".select-opt").toggleClass("active");
+                }
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -94,7 +108,153 @@
             </div>
         </div>
 
-        <a href="#" class="btn expanded fat" data-top="lg">저장</a>
+        <div class="row-item inline-type">
+            <div class="key">생년월일</div>
+            <div class="value">
+                <div class="flex-grouping">
+                    <div class="input sm">
+                        <input type="text" placeholder="ex.1987">
+                    </div>
+                    <div class="auto">년도</div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">성별</div>
+            <div class="value">
+                <div class="flex-grouping radio-type">
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-man.png" alt="">
+                        </div>
+                        <div class="title">남자</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-woman.png" alt="">
+                        </div>
+                        <div class="title">여자</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">자녀</div>
+            <div class="value">
+                <div class="flex-grouping radio-type">
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-child.png" alt="">
+                        </div>
+                        <div class="title">유</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-nochild.png" alt="">
+                        </div>
+                        <div class="title">무</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">피부타입</div>
+            <div class="value">
+                <div class="flex-grouping radio-type">
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-skin1.png" alt="">
+                        </div>
+                        <div class="title">건성</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-skin2.png" alt="">
+                        </div>
+                        <div class="title">중성</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-skin3.png" alt="">
+                        </div>
+                        <div class="title">지성</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-skin4.png" alt="">
+                        </div>
+                        <div class="title">복합성</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">피부타입</div>
+            <div class="value">
+                <div class="flex-grouping">
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-trb1.png" alt="">
+                        </div>
+                        <div class="title">여드름</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-trb2.png" alt="">
+                        </div>
+                        <div class="title">아토피</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-trb3.png" alt="">
+                        </div>
+                        <div class="title">민감성</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-trb4.png" alt="">
+                        </div>
+                        <div class="title">기타</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="key">관심분야</div>
+            <div class="value">
+                <div class="flex-grouping">
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-fv1.png" alt="">
+                        </div>
+                        <div class="title">건강</div>
+                    </div>
+                    <div class="auto">
+                        <div class="select-opt">
+                            <div class="mask"><img src="../../images/common/icon-checked.png" alt=""></div>
+                            <img src="../../images/login/icon-fv2.png" alt="">
+                        </div>
+                        <div class="title">뷰티</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn expanded white fat" data-top="lg">회원탈퇴</a>
+        <a href="#" class="btn expanded fat" data-top="xs">완료</a>
     </div>
 </div>
 </body>

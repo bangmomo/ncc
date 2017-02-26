@@ -34,4 +34,59 @@
         background: url("#{$path}common/icon-login-pw.png") no-repeat left center;
         background-size: 18px 18px;
     }
+
+    .flex-grouping:first-child {
+        input {
+            text-align: right;
+        }
+    }
+
+    .row-item.inline-type {
+        .key {
+            width: 55px;
+        }
+    }
+
+    .select-opt {
+        position: relative;
+
+        &.active {
+            .mask {
+                transform: scale(1,1);
+            }
+        }
+
+        .mask {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 5px;
+            background-color: rgba(253,193,68,0.8);
+            transform: scale(0,0);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            > img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 18px;
+                height: 18px;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        > img {
+            width: 58px;
+            height: 55px;
+            box-shadow: 0 9px 17px rgba(213,213,213,0.4);
+        }
+    }
+
+    .title {
+        margin-top: 7px;
+        font-size: 11px;
+        text-align: center;
+    }
 }
