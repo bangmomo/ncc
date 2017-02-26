@@ -45,6 +45,40 @@
   }
 }
 
+.total-srch-warp {
+  height: 70px;
+  margin-bottom: 12px;
+
+  .inner {
+    background-color: $bg-white-color;
+    padding: 20px 12px;
+
+    .srch {
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 30px;
+        padding: 0 35px 0 10px;
+        border: 1px solid #b5b5b5;
+      }
+
+      a {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 10px;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
 .common-header {
   z-index: 100;
   position: fixed;

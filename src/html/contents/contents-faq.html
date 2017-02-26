@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+    <script src="../../js/common.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".faq-list li a").on("click", function(){
+                $(this).parents(".item").toggleClass("active").siblings("li").removeClass("active");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-close"><img src="../../images/common/icon-cancel.svg" alt=""></a>
+    <div class="header-name">텐텐텐</div>
+</div>
+
+<!-- Container -->
+<div class="container contents-faq">
+    <!-- 통합검색 -->
+    <div class="total-srch-warp">
+        <div class="inner">
+            <div class="srch">
+                <input type="text" placeholder="Search">
+                <a href="#"><img src="../../images/common/icon-search.png" alt="검색"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //통합검색 -->
+
+    <div class="section">
+        <div class="section-title">FAQ</div>
+        <ul class="faq-list">
+            <li class="item active">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                    <div class="btn-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                <div class="answer">
+                    답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 임시푸터 -->
+<div class="footer">
+    <ul>
+        <li><a href="#">쇼핑</a></li>
+        <li><a href="#">후기</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">마이페이지</a></li>
+    </ul>
+</div>
+</body>
+</html>
