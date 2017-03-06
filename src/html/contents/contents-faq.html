@@ -20,8 +20,9 @@
 
     <script>
         $(document).ready(function(){
-            $(".faq-list li a").on("click", function(){
+            $(".faq-list li a").on("click", function(e){
                 $(this).parents(".item").toggleClass("active").siblings("li").removeClass("active");
+                e.preventDefault();
             });
         });
     </script>
@@ -31,23 +32,26 @@
 
 <!-- header -->
 <div class="header">
-    <a href="#" class="header-close"><img src="../../images/common/icon-cancel.svg" alt=""></a>
+    <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
     <div class="header-name">텐텐텐</div>
+    <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
+    <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
+    <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
+    <div class="search-area">
+        <div class="search-form">
+            <div class="inner">
+                <a href="#" class="btn-back"><img src="../../images/common/arrow-back.png" alt=""></a>
+                <div class="input-area">
+                    <input type="text" placeholder="Search">
+                </div>
+                <a href="#" class="btn-go"><img src="../../images/common/icon-search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Container -->
 <div class="container contents-faq">
-    <!-- 통합검색 -->
-    <div class="total-srch-warp">
-        <div class="inner">
-            <div class="srch">
-                <input type="text" placeholder="Search">
-                <a href="#"><img src="../../images/common/icon-search.png" alt="검색"></a>
-            </div>
-        </div>
-    </div>
-    <!-- //통합검색 -->
-
     <div class="section">
         <div class="section-title">FAQ</div>
         <ul class="faq-list">

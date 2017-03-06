@@ -19,8 +19,8 @@ $(document).on("click", ".like", function() {
 });
 
 /* 상품검색버튼 클릭시 */
-$(document).on("click", ".search-area .search-trigger", function() {
-    $(this).closest(".search-area").addClass("active");
+$(document).on("click", ".header .header-srch", function() {
+    $(this).siblings(".search-area").addClass("active");
 });
 
 /* 상품검색 Close */

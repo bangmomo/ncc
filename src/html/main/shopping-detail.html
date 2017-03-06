@@ -18,12 +18,40 @@
     <script src="../../js/layout.js"></script>
     <script src="../../js/common.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            $(".shopping-detail .qna-toggle").on("click", function(e){
+                $(this).siblings(".inner").toggleClass("active");
+                e.preventDefault();
+            });
+
+            $(".faq-list li a").on("click", function(e){
+                $(this).parents(".item").toggleClass("active").siblings("li").removeClass("active");
+                e.preventDefault();
+            });
+        });
+    </script>
+
 </head>
 <body>
-
 <!-- header -->
 <div class="header">
+    <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
     <div class="header-name">상품상세</div>
+    <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
+    <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
+    <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
+    <div class="search-area">
+        <div class="search-form">
+            <div class="inner">
+                <a href="#" class="btn-back"><img src="../../images/common/arrow-back.png" alt=""></a>
+                <div class="input-area">
+                    <input type="text" placeholder="Search">
+                </div>
+                <a href="#" class="btn-go"><img src="../../images/common/icon-search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Container -->
@@ -42,7 +70,7 @@
                     <span>☆</span>
                     <span>☆</span>
                 </div>
-                <div class="review-count" style="width: 80%;">
+                <div class="review-count" style="width: 80%;"><!-- 별점 인라인으로 width값 조정 -->
                     <span>★</span>
                     <span>★</span>
                     <span>★</span>
@@ -58,21 +86,110 @@
         <div class="detail-title">상품상세설명</div>
         <img src="../../images/dummy/detail-banner.jpg" alt="">
     </div>
+
+    <div class="qna-section">
+        <a href="#" class="qna-toggle"><span class="num">30</span>개의 상품 Q&A &gt;</a>
+        <!-- qna-toggle클릭시 inner에 active 추가됨 -->
+        <div class="inner">
+            <div class="section-title">Q&A</div>
+            <ul class="faq-list">
+                <li class="item active">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="question">질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.질문입니다.</div>
+                        <div class="btn-arrow">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                    <div class="answer">
+                        답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.답변입니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <!-- 고정옵션버튼 -->
 <div class="buy-option">
     <div class="buy-inner">
         <a href="#" class="buy">구매하기</a>
-        <div class="share">
-            <div class="trigger"><img src="../../images/common/icon-share.png" alt=""></div>
-            <div class="share-opt">
-                <a href="#"><img src="../../images/common/share-kakao.png" alt=""></a>
-                <a href="#"><img src="../../images/common/share-sms.png" alt=""></a>
-                <a href="#"><img src="../../images/common/share-line.png" alt=""></a>
-                <div class="close"><img src="../../images/common/icon-cancel.png" alt=""></div>
-            </div>
-        </div>
     </div>
 
     <div class="basket-inner">

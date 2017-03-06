@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>title</title>
 
     <link rel="stylesheet" href="../../css/base.css">
@@ -16,23 +16,13 @@
     <script src="../../js/lib/slick.min.js"></script>
     <script src="../../js/component.js"></script>
     <script src="../../js/layout.js"></script>
-    <script src="../../js/common.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.event-list').slick({
-                arrows : false,
-                dots : true
-            });
-        });
-    </script>
 </head>
 <body>
-
 <!-- header -->
 <div class="header">
     <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
-    <div class="header-name">HOME</div>
+    <div class="header-name">TEN TEN TEN</div>
     <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
     <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
     <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
@@ -49,29 +39,11 @@
     </div>
 </div>
 
-<!-- Container -->
-<div class="container shopping-event">
-    <ul class="event-list">
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-    </ul>
-</div>
-
-<!-- 임시푸터 -->
-<div class="footer">
-    <ul>
-        <li><a href="#">쇼핑</a></li>
-        <li><a href="#">후기</a></li>
-        <li><a href="#">커뮤니티</a></li>
-        <li><a href="#">마이페이지</a></li>
-    </ul>
+<div class="container srch-no-result">
+    <!-- 검색결과 없을시 -->
+    <div class="no-item">
+        <img src="../../images/common/no-result.png" alt="">
+    </div>
 </div>
 </body>
 </html>

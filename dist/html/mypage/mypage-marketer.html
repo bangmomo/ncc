@@ -16,23 +16,13 @@
     <script src="../../js/lib/slick.min.js"></script>
     <script src="../../js/component.js"></script>
     <script src="../../js/layout.js"></script>
-    <script src="../../js/common.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.event-list').slick({
-                arrows : false,
-                dots : true
-            });
-        });
-    </script>
 </head>
 <body>
-
 <!-- header -->
 <div class="header">
     <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
-    <div class="header-name">HOME</div>
+    <div class="header-name">마케터전환</div>
     <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
     <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
     <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
@@ -49,29 +39,44 @@
     </div>
 </div>
 
-<!-- Container -->
-<div class="container shopping-event">
-    <ul class="event-list">
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-        <li>
-            <a href="#"><img src="../../images/dummy/event-dummy.jpg" alt=""></a>
-        </li>
-    </ul>
-</div>
+<div class="container mypage-marketer">
+    <div class="section">
+        <div class="terms-area">
+            <div class="terms">
+                마케터 전환 동의를 함으로써 <span>텐텐텐의 마케터로써</span> 프로그램 이용약관에 동의하시게 됩니다.
+                <a href="#" class="btn-more">더보기</a>
+            </div>
 
-<!-- 임시푸터 -->
-<div class="footer">
-    <ul>
-        <li><a href="#">쇼핑</a></li>
-        <li><a href="#">후기</a></li>
-        <li><a href="#">커뮤니티</a></li>
-        <li><a href="#">마이페이지</a></li>
-    </ul>
+            <div class="aligner" data-top="xs">
+                <div class="right">
+                    <div class="checkbox">
+                        <input type="checkbox" id="c1" checked="checked">
+                        <label for="c1">약관 동의하기</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="row-item">
+            <div class="key">계좌번호</div>
+            <div class="value">
+                <div class="select">
+                    <select>
+                        <option value="">계좌선택</option>
+                        <option value="">신한은행</option>
+                        <option value="">우리은행</option>
+                        <option value="">국민은행</option>
+                    </select>
+                </div>
+                <div class="input expanded">
+                    <input type="text" placeholder="계좌번호를 입력해주세요">
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn expanded fat" data-top="lg">마케터 전환 신청</a>
+    </div>
 </div>
 </body>
 </html>

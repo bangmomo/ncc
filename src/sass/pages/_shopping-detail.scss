@@ -8,6 +8,10 @@
         background-color: $white-color;
     }
 
+    > div.qna-section {
+        padding: 0;
+    }
+
     .thumb-section {
         position: relative;
         margin-bottom: 12px;
@@ -62,6 +66,142 @@
 
         img {
             max-width: 100%;
+        }
+    }
+
+    .qna-section {
+        .qna-toggle {
+            display: block;
+            padding: 20px 13px;
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            box-shadow: 5px 7px 10px rgba(213,213,213,0.4);
+            text-align: center;
+        }
+
+        .inner {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+            
+            .section-title {
+                padding: 10px 12px;
+                color: $bold-color;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .faq-list {
+                border-top: 2px solid $border-dark-color;
+                border-bottom: 1px solid $border-dark-color;
+
+                .item {
+                    &.active {
+                        .question {
+                            color: $point-color1;
+                            overflow: auto;
+                            text-overflow: clip;
+                            white-space: normal;
+                        }
+
+                        .btn-arrow {
+                            top: 15px;
+                            transform: rotate(180deg);
+                        }
+
+                        .answer {
+                            display: block;
+                        }
+                    }
+
+                    + li {
+                        border-top: 1px solid $border-dark-color;
+                    }
+
+                    a {
+                        display: block;
+                        position: relative;
+
+                        .question {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            position: relative;
+                            padding: 12px 40px 12px 30px;
+                            background-color: $bg-white-color;
+
+                            &::before {
+                                content: "Q";
+                                display: block;
+                                position: absolute;
+                                top: 10px;
+                                left: 12px;
+                                font-size: 15px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .btn-arrow {
+                            position: absolute;
+                            top: 10px;
+                            right: 12px;
+                            width: 15px;
+                            height: 15px;
+                            transform-origin: 50% 50%;
+                            transition: transform 0.8s;
+
+                            .arrow {
+                                position: relative;
+
+                                &::before {
+                                    content: " ";
+                                    display: block;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 15px;
+                                    height: 15px;
+                                    background-color: #8c8c8c;
+                                    transform: rotate(45deg);
+
+                                }
+
+                                &:after {
+                                    content: " ";
+                                    display: block;
+                                    position: absolute;
+                                    top: -2px;
+                                    left: 0;
+                                    width: 15px;
+                                    height: 15px;
+                                    background-color: #fff;
+                                    transform: rotate(45deg);
+
+                                }
+                            }
+                        }
+                    }
+
+                    .answer {
+                        display: none;
+                        position: relative;
+                        padding: 12px 12px 12px 30px;
+                        border-top: 1px solid $border-dark-color;
+
+                        &::before {
+                            content: "A";
+                            display: block;
+                            position: absolute;
+                            top: 10px;
+                            left: 12px;
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
         }
     }
 }
