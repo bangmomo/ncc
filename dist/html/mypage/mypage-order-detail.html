@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
+    <div class="header-name">상세정보</div>
+    <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
+    <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
+    <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
+    <div class="search-area">
+        <div class="search-form">
+            <div class="inner">
+                <a href="#" class="btn-back"><img src="../../images/common/arrow-back.png" alt=""></a>
+                <div class="input-area">
+                    <input type="text" placeholder="Search">
+                </div>
+                <a href="#" class="btn-go"><img src="../../images/common/icon-search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mypage-order-detail">
+    <div class="inner">
+        <div class="aligner">
+            <div class="left">
+                <div class="order-num">주문번호 123456789</div>
+            </div>
+            <div class="right">
+                <div class="date">2017.03.01</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="product-title">제품명을 입력해주세요</div>
+            <div class="status point-color1">배송중</div>
+            <!-- 구매정보 -->
+            <div class="product-info">
+                <div class="info">[키즈홍삼]A세트 2개</div>
+                <div class="info">[비타민]1개</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="sec-title">배송지 정보</div>
+            <div class="row-item inline-type">
+                <div class="key">받는분</div>
+                <div class="value">
+                    김소연
+                </div>
+            </div>
+            <div class="row-item inline-type">
+                <div class="key">연락처</div>
+                <div class="value">010-0000-0000</div>
+            </div>
+            <div class="row-item inline-type">
+                <div class="key">배송지</div>
+                <div class="value">
+                    서울시 강남구 논현동 000-00 00아파트 000호
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <div class="btn-left">
+                <a href="#" class="btn expanded fat white" data-top="sm">구매확정</a>
+            </div>
+            <div class="btn-right">
+                <a href="#" class="btn expanded fat white" data-top="sm">반품신청</a>
+            </div>
+        </div>
+        <a href="#" class="btn expanded fat" data-top="sm">배송조회</a>
+    </div>
+</div>
+</body>
+</html>

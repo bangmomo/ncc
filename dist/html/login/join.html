@@ -11,54 +11,39 @@
     <link rel="stylesheet" href="../../css/lib.css">
     <link rel="stylesheet" href="../../css/pages.css">
 
-    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
-    <script src="../../js/lib/jquery-ui.min.js"></script>
-    <script src="../../js/lib/slick.min.js"></script>
-    <script src="../../js/component.js"></script>
-    <script src="../../js/layout.js"></script>
-
 </head>
 <body>
 
-<div class="container join">
-    <div class="email-join-area">
-        <div class="logo"><img src="../../images/common/logo.png" alt=""></div>
-        <div class="section">
-            <div class="row-item flex-grouping">
-                <div class="key auto"><img src="../../images/common/icon-login-id.png" alt=""></div>
-                <div class="value">
-                    <div class="email">
-                        <div class="input">
-                            <label for="email1">email주소</label>
-                            <input type="text" id="email1" placeholder="Accounts">
-                        </div>
-                        <span class="at">@</span>
-                        <div class="select white">
-                            <label for="email2">선택</label>
-                            <select id="email2">
-                                <option value="">메일주소선택</option>
-                                <option value="">옵션2</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-item flex-grouping">
-                <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
-                <div class="value">
-                    <div class="input expanded"><input type="password" placeholder="New Password"></div>
-                </div>
-            </div>
-            <div class="row-item flex-grouping">
-                <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
-                <div class="value">
-                    <div class="input expanded"><input type="password" placeholder="Verify New Password"></div>
-                    <div class="guide-msg-error">최소 6글자여야합니다.</div>
-                </div>
-            </div>
-            <a href="#" class="btn expanded fat">LOGIN</a>
+<div class="container login">
+    <div class="login-member"><span><em class="point-color2">12489</em>명의 트리가 연결되었습니다.</span></div>
+    <div class="login-area">
+        <div class="logo-area">
+            <img src="../../images/common/logo.png" alt="">
         </div>
+        <div class="login-menu">
+            <a href="#">로그인</a>
+            <a href="#" class="active">회원가입</a>
+        </div>
+        <div class="row-item flex-grouping">
+            <div class="key auto"><img src="../../images/common/icon-login-id.png" alt=""></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="text" placeholder="휴대폰번호">
+                </div>
+                <a href="#" class="access">인증번호 받기 &gt;</a>
+            </div>
+        </div>
+        <div class="row-item flex-grouping">
+            <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="text" placeholder="인증번호 입력">
+                </div>
+            </div>
+        </div>
+        <a href="#" data-top="sm" class="btn expanded fat">인증하기</a>
     </div>
+    <div class="footer-logo"><img src="../../images/common/foot-logo.png" alt=""></div>
 </div>
 </body>
 </html>

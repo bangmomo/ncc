@@ -76,7 +76,7 @@ gulp.task('sass', () => {
             outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'IE 9'],
+            browsers: ['last 2 versions', 'IE 9', 'iOS >= 6', 'Android >= 4'],
             cascade: false
         }))
         .pipe(sourcemaps.write())

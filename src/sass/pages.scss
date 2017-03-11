@@ -7,11 +7,11 @@
 @import "layout/layout";
 @import "layout/footer";
 
+@import "pages/find-idpw";
 @import "pages/login";
-@import "pages/email-login";
-@import "pages/join";
 @import "pages/join-plus2";
 @import "pages/join-plus3";
+@import "pages/join-step";
 @import "pages/join-address";
 @import "pages/main";
 @import "pages/shopping-main";
@@ -24,6 +24,8 @@
 @import "pages/mypage-point";
 @import "pages/mypage-payment";
 @import "pages/mypage-order-list";
+@import "pages/mypage-order-detail";
+@import "pages/mypage-order-fin";
 @import "pages/mypage-marketer";
 @import "pages/user-info";
 @import "pages/mypage-delivery";

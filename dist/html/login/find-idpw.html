@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <title>title</title>
 
     <link rel="stylesheet" href="../../css/base.css">
@@ -14,15 +14,10 @@
 </head>
 <body>
 
-<div class="container login">
-    <div class="login-member"><span><em class="point-color2">12489</em>명의 트리가 연결되었습니다.</span></div>
+<div class="container find-idpw">
     <div class="login-area">
         <div class="logo-area">
             <img src="../../images/common/logo.png" alt="">
-        </div>
-        <div class="login-menu">
-            <a href="#">로그인</a>
-            <a href="#" class="active">회원가입</a>
         </div>
         <div class="row-item flex-grouping">
             <div class="key auto"><img src="../../images/common/icon-login-id.png" alt=""></div>
@@ -34,14 +29,31 @@
             </div>
         </div>
         <div class="row-item flex-grouping">
-            <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
+            <div class="key auto no-img"></div>
             <div class="value">
                 <div class="input expanded">
                     <input type="text" placeholder="인증번호 입력">
                 </div>
+                <a href="#" class="access">인증번호 확인 &gt;</a>
             </div>
         </div>
-        <a href="#" data-top="sm" class="btn expanded fat">인증하기</a>
+        <div class="row-item flex-grouping">
+            <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="password" placeholder="새 비밀번호">
+                </div>
+            </div>
+        </div>
+        <div class="row-item flex-grouping">
+            <div class="key auto no-img"></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="password" placeholder="새 비밀번호 확인">
+                </div>
+            </div>
+        </div>
+        <a href="#" data-top="sm" class="btn expanded fat">비밀번호 재설정</a>
     </div>
     <div class="footer-logo"><img src="../../images/common/foot-logo.png" alt=""></div>
 </div>

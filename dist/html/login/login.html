@@ -15,26 +15,43 @@
 <body>
 
 <div class="container login">
-    <div class="login-member"><span>"<em>12489</em>명의 트리(링크가지)가 연결되었습니다."</span></div>
+    <div class="login-member"><span><em class="point-color2">12489</em>명의 트리가 연결되었습니다.</span></div>
     <div class="login-area">
         <div class="logo-area">
             <img src="../../images/common/logo.png" alt="">
-            <div class="login-msg">
-                친구와 함께라면 <span class="point-color1">최대 30%</span><br>
-                대한민국 1등 멀티캐쉬백
+        </div>
+        <div class="login-menu">
+            <a href="#" class="active">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+        <div class="row-item flex-grouping">
+            <div class="key auto"><img src="../../images/common/icon-login-id.png" alt=""></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="text" placeholder="휴대폰번호">
+                </div>
             </div>
         </div>
-        <div class="join-menu">
-            <div class="item"><a class="join-naver"><img src="../../images/common/icon-naver.png" alt=""></a></div>
-            <div class="item"><a class="join-facebook"><img src="../../images/common/icon-facebook.png" alt=""></a></div>
-            <div class="item"><a class="join-kakao"><img src="../../images/common/icon-kakao.png" alt=""></a></div>
+        <div class="row-item flex-grouping">
+            <div class="key auto"><img src="../../images/common/icon-login-pw.png" alt=""></div>
+            <div class="value">
+                <div class="input expanded">
+                    <input type="password" placeholder="암호입력">
+                </div>
+            </div>
         </div>
-        <div class="join-mail">
-            <a href="#" class="btn expanded">이메일로 가입하기</a>
+        <div class="aligner" data-top="sm" data-bottom="sm">
+            <div class="left">
+                <div class="checkbox">
+                    <input type="checkbox" id="c1" checked="checked">
+                    <label for="c1">로그인 상태 유지</label>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#">비밀번호찾기</a>
+            </div>
         </div>
-        <div class="join-util">
-            이미 계정이 있으신가요? <a class="login-btn">로그인</a>
-        </div>
+        <a href="#" class="btn expanded fat">LOGIN</a>
     </div>
     <div class="footer-logo"><img src="../../images/common/foot-logo.png" alt=""></div>
 </div>

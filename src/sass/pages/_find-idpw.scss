@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.login {
+.find-idpw {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,21 +8,11 @@
     padding: 20px 15px 10px;
     background: url("#{$path}common/login-bg.png") no-repeat;
     background-size: cover;
-
+    
     .input {
         input {
             color: $white-color;
         }
-    }
-}
-
-.login-member {
-    padding: 0 8px;
-    color: #fff;
-
-    em {
-        font-size: 13px;
-        font-weight: 700;
     }
 }
 
@@ -38,30 +28,16 @@
     text-align: center;
     padding-bottom: 20px;
 
-    .login-menu {
-        margin: 10px 0;
-        
-        a {
-            display: inline-block;
-            color: $white-color;
-            
-            &.active {
-                color: $point-color1;
-                border-bottom: 2px solid $point-color1;
-            }
-
-            + a {
-                margin-left: 30px;
-            }
-        }
-    }
-
     .row-item {
         + .row-item {
             margin-top: 10px;
         }
 
         .key {
+            &.no-img {
+                width: 18px;
+            }
+
             img {
                 width: 18px;
                 height: 18px;

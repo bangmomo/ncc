@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>title</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/lib.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <script src="../../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/lib/slick.min.js"></script>
+    <script src="../../js/component.js"></script>
+    <script src="../../js/layout.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <a href="#" class="header-link"><img src="../../images/common/icon-link.png" alt=""></a>
+    <div class="header-name">구매완료</div>
+    <a href="#" class="header-basket"><img src="../../images/common/icon-cart.png" alt=""></a>
+    <a href="#" class="header-srch"><img src="../../images/common/icon-search-w.png" alt=""></a>
+    <!--  헤더검색버튼 클릭시 search-area에 active클래스 추가됨 -->
+    <div class="search-area">
+        <div class="search-form">
+            <div class="inner">
+                <a href="#" class="btn-back"><img src="../../images/common/arrow-back.png" alt=""></a>
+                <div class="input-area">
+                    <input type="text" placeholder="Search">
+                </div>
+                <a href="#" class="btn-go"><img src="../../images/common/icon-search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mypage-order-fin">
+    <div class="inner">
+        <div class="section">
+            <div class="product-info-area">
+                <div class="thumb-area">
+                    <div class="info">
+                        <div class="company">마임건강식품</div>
+                        <div class="title">홍삼에 칼슘이, 홍삼키본</div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="../../images/dummy/item-img03.png" alt="">
+                    </div>
+                </div>
+                <div class="grouping">
+                    <em class="point-color2">이 상품을 구매확정 하시겠습니까?</em>
+                    <p>
+                        구매확정 이후에는 반품 진행이 불가하므로 반드시 상품을 받으신 후에 진행해주세요.<br>
+                        구매평도 함께 작성하시면 추가혜택을 드립니다.
+                    </p>
+                </div>
+                <div class="grouping">
+                    <div class="row-item flex-grouping">
+                        <div class="key">구매확정시 혜택:</div>
+                        <div class="value">
+                            <div class="point-color2">포인트2000원<br>(10%계산금액)</div>
+                        </div>
+                    </div>
+                    <div class="row-item flex-grouping">
+                        <div class="key">구매평 작성시 혜택:</div>
+                        <div class="value">
+                            <div class="point-color2">포인트100원<br>(1%계산금액)</div>
+                        </div>
+                    </div>
+                    <div class="row-item flex-grouping">
+                        <div class="key">프리미엄 구매평<br>작성시 혜택:</div>
+                        <div class="value">
+                            <div class="point-color2">포인트150원<br>(2%계산금액)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-msg">* 구매평 작성은 선택사항입니다</div>
+
+    <div class="inner">
+        <div class="section">
+            <div class="write-area">
+                <div class="input expanded">
+                    <input type="text" placeholder="제목을 입력하세요.">
+                </div>
+                <div class="text-area">
+                    <textarea cols="20" rows="10" placeholder="내용을 입력하세요.&#10;(최소 15자 이상-일반후기)&#10;(최소 100자 이상,사진첨부-프리미엄후기)"></textarea>
+                    <span class="count"><em>0</em>/150자</span>
+                </div>
+                <ul class="attach-area">
+                   <li class="item">
+                       <label for="file">
+                           <img src="../../images/common/add-img.png" alt="">
+                       </label>
+                       <input type="file" id="file">
+                   </li>
+                    <li class="item">
+                        <div class="wrap">
+                            <div class="thumb"><img src="../../images/dummy/cont-dummy02.png" alt=""></div>
+                            <a href="#" class="del"></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="wrap">
+                            <div class="thumb"><img src="../../images/dummy/dummy-thumbnail03.jpg" alt=""></div>
+                            <a href="#" class="del"></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="wrap">
+                            <div class="thumb"><img src="../../images/dummy/cont-dummy01.png" alt=""></div>
+                            <a href="#" class="del"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-msg">
+        해당 상품과 무관한 내용이나 동일문자 반복등 부적합한 내용일
+        경우 통보 없이 삭제 및 적립혜택이 회수 될 수 있습니다.<br>
+        내용이 욕설/비방/명예훼손/특정효능에 있어 오해의 소지가 있는
+        내용/저작권, 초상권등 타인의 권리를 침해하는 이미지 사용시
+        통보 없이 삭제 될 수 있습니다.<br>
+        작성하신 글의 저작권 침해에 대한 책임은 본인에게 있습니다.
+    </div>
+
+    <a href="#" class="btn expanded fat" data-top="sm">구매확정</a>
+</div>
+</body>
+</html>
