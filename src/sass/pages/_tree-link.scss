@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.tree-link {
+    background: $bg-color;
+
+    .inner {
+        padding: 20px 0 34px;
+    }
+
+    .tree-list {
+        width: 100px;
+        margin: 0 auto;
+
+        .item {
+            position: relative;
+            padding: 14px 0;
+
+            &.active {
+                .profile-thumb {
+                    background-position: 50% 0;
+                }
+            }
+
+            + .item {
+                &::before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: -8px;
+                    left: 49px;
+                    width: 1px;
+                    height: 15px;
+                    background-color: $border-light-color;
+                }
+
+                &::after {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 50px;
+                    left: 95px;
+                    width: 15px;
+                    height: 1px;
+                    background-color: $border-light-color;
+                }
+            }
+
+            a {
+                display: block;
+            }
+
+            .my-thumb {
+                margin: 0 auto;
+                width: 65px;
+                height: 65px;
+                background: url("#{$path}common/link-me.png") no-repeat;
+                background-size: 65px 65px;
+            }
+
+            .profile-thumb {
+                margin: 0 auto;
+                width: 65px;
+                height: 65px;
+                background: url("#{$path}common/link-usersprite.png") no-repeat 50% 100%;
+                background-size: 65px 130px;
+            }
+            
+            .user {
+                margin-top: 5px;
+                color: $bold-color;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .friends {
+                position: absolute;
+                top: 14px;
+                left: 125px;
+                
+                .friends-thumb {
+                    width: 65px;
+                    height: 65px;
+                    background: url("#{$path}common/link-userdep.png") no-repeat;
+                    background-size: 65px 65px;
+                }
+                
+                .count {
+                    margin-top: 5px;
+                    color: $bold-color;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
