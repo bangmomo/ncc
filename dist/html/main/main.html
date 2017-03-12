@@ -33,8 +33,18 @@
                 });
             });
 
+            $(".tabs-wrap .category-tabs").on("scroll", function(){
+                var offLeft = $(this).find(".active a").position().left;
+
+                console.log(offLeft);
+
+                $(this).siblings(".active-bar").css({
+                    "transform" : "translateX(" + offLeft + "px)"
+                });
+            });
+
             /* 공유버튼 */
-            $('.share-btn').on('click', function(e) {
+            /*$('.share-btn').on('click', function(e) {
                 $(this).parent().addClass('active');
                 e.preventDefault();
             });
@@ -44,7 +54,7 @@
                 e.preventDefault();
             });
 
-            $(".tabs-wrap .category-tabs li").eq(0).trigger("click");
+            $(".tabs-wrap .category-tabs li").eq(0).trigger("click");*/
         });
     </script>
 
@@ -77,6 +87,12 @@
         <ul class="category-tabs">
             <li class="active"><a href="#">건강기능식품</a></li>
             <li><a href="#">화장품</a></li>
+            <li><a href="#">뷰티</a></li>
+            <li><a href="#">화장품화장품</a></li>
+            <li><a href="#">기타잡화</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">수제신발</a></li>
+            <li><a href="#">의약품</a></li>
         </ul>
         <span class="active-bar"></span>
     </div>
