@@ -61,6 +61,27 @@
         }
     }
 
+    .review {
+        @include clearfix;
+        margin: 0 -12px -20px;
+        border-top: 1px solid $border-color;
+
+        .item {
+            float: left;
+            width: 33.33333333%;
+
+            + .item {
+                border-left: 1px solid $border-color;
+            }
+
+            a {
+                display: block;
+                padding: 20px 0;
+                text-align: center;
+            }
+        }
+    }
+
     .guide-msg {
         padding: 20px 0 15px;
     }
