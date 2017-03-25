@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.terms {
+    overflow-y: auto;
+    height: 100%;
+    padding: 65px 10px 80px;
+
+    .terms-subject {
+        color: $bold-color;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .terms-list {
+        .title {
+            color: $bold-color;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        +.terms-list {
+            margin-top: 10px;
+        }
+    }
+
+    div[class^="terms-"] {
+        margin-top: 15px;
+        padding: 15px 0;
+        border-top: 1px solid $border-color;
+        
+        .title {
+            margin-bottom: 8px;
+            color: $bold-color;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .sub-title {
+            color: $bold-color;
+            font-size: 15px;
+        }
+
+        .grouping {
+            padding: 10px 0;
+
+            em {
+                font-weight: 700;
+            }
+
+            .table {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .sub-terms {
+        padding-top: 20px;
+        border-top: 1px solid $point-color1;
+
+        .subject {
+            margin-bottom: 10px;
+            color: $bold-color;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .sub-list-title {
+            color: $bold-color;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}

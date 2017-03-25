@@ -161,6 +161,37 @@
   }
 }
 
+.pop-header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: #4d433b;
+
+  .header-close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .header-name {
+    padding: 12px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
 .common-header {
   z-index: 100;
   position: fixed;
