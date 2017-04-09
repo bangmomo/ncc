@@ -13,9 +13,10 @@
   .header-tree {
     display: block;
     position: absolute;
-    top: 12px;
-    right: 40px;
+    top: 16px;
+    right: 0;
     color: $white-color;
+    font-size: 15px;
   }
 
   .header-link {
