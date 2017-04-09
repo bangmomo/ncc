@@ -100,10 +100,24 @@
                 .item {
                     &.active {
                         .question {
-                            color: $point-color1;
-                            overflow: auto;
-                            text-overflow: clip;
-                            white-space: normal;
+                            padding: 12px 40px 30px 30px;
+                            
+                            &:before {
+                                color: $point-color1;
+                            }
+
+                            .quest {
+                                color: $point-color1;
+                                overflow: auto;
+                                text-overflow: clip;
+                                white-space: normal;
+                            }
+
+                            .auth {
+                                display: block;
+                                float: right;
+                                color: $base-color;
+                            }
                         }
 
                         .btn-arrow {
@@ -125,12 +139,9 @@
                         position: relative;
 
                         .question {
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            position: relative;
                             padding: 12px 40px 12px 30px;
                             background-color: $bg-white-color;
+                            position: relative;
 
                             &::before {
                                 content: "Q";
@@ -140,6 +151,16 @@
                                 left: 12px;
                                 font-size: 15px;
                                 font-weight: 700;
+                            }
+
+                            .quest {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            
+                            .auth {
+                                display: none;
                             }
                         }
 

@@ -3,6 +3,29 @@
 .post-list {
     background: $bg-color;
 
+    .local-srch {
+        position: relative;
+        background-color: $bg-white-color;
+
+        input {
+            width: 100%;
+            border: 0;
+            padding: 15px 32px 15px 13px;
+        }
+
+        .btn-go {
+            display: block;
+            position: absolute;
+            top : 12px;
+            right: 12px;
+
+            > img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
     .subject {
         padding: 12px 0;
         color: $bold-color;

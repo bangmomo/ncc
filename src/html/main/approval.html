@@ -17,6 +17,14 @@
     <script src="../../js/component.js"></script>
     <script src="../../js/layout.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            $(".appr-opt a").on("click", function(){
+                $(this).closest("div").addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+
 </head>
 <body>
 <!-- header -->

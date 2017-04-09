@@ -23,6 +23,14 @@
             float: left;
             width: 50%;
             padding: 0 5px;
+            
+            &.active {
+                a {
+                    color: $white-color;
+                    background-color: $point-color1;
+                    border: 1px solid $point-color1;
+                }
+            }
 
             a {
                 padding: 12px 10px;
